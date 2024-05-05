@@ -12,10 +12,12 @@
       "step": "importWxr",
       "file": {
         "resource": "url",
-        "url": "https://raw.githubusercontent.com/rfluethi/wp-Playground-test-2/main/playground/test.xml?token=GHSAT0AAAAAACR4EKB6EXZFAT2F5NSFJC4KZRXX2TA"
+        "url": "https://raw.githubusercontent.com/rfluethi/WordPress-Seminar-Playgrounds/main/playground/import-example/import.xml"
       }
     }
   ],
   "login": true,
   "landingPage": "/wp-admin/post.php?post=4&action=edit"
 }
+
+https://raw.githubusercontent.com/rfluethi/WordPress-Seminar-Playgrounds/main/playground/import-example/import.xml?token=GHSAT0AAAAAACR4EKB6EXZFAT2F5NSFJC4KZRXX2TA
