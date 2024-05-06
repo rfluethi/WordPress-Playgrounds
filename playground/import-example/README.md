@@ -1,4 +1,5 @@
 # Examples
+These files are used in the seminar materials to demonstrate how to import a WordPress page into the Playground and display it in edit mode.
 
 ## blueprint.html
 This HTML file demonstrates how to use the JavaScript API to load and display a `blueprint.json` in the WordPress Playground.
