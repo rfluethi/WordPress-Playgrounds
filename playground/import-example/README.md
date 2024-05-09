@@ -1,4 +1,4 @@
-# Examples
+# Import-Examples
 These files are used in the seminar materials to demonstrate how to import a WordPress page into the Playground and display it in edit mode.
 
 ## blueprint.html
