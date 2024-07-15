@@ -5,7 +5,9 @@
     "wp": "latest"
   },
   "siteOptions": {
-    "blogname": "Playground Blueprint Demo"
+    "blogname": "Playground Blueprint Demo",
+    "timezone_string": "Europe/Zurich",
+    "permalink_structure": "/%postname%/"
   },
   "steps": [
     {
