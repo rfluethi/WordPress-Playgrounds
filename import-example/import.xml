@@ -42,10 +42,10 @@
 
 		<item>
 		<title><![CDATA[Blueprint Import Beispiel]]></title>
-		<link>https://playground.wordpress.net/scope:0.7866643466792241/?p=7</link>
+		<link>https://playground.wordpress.net/scope:0.7866643466792241/?p=1</link>
 		<pubDate>Sat, 01 Jan 2000 00:00:50 +0000</pubDate>
 		<dc:creator><![CDATA[admin]]></dc:creator>
-		<guid isPermaLink="false">https://playground.wordpress.net/scope:0.4616299508568381/?p=4</guid>
+		<guid isPermaLink="false">https://playground.wordpress.net/scope:0.4616299508568381/?p=1</guid>
 		<description></description>
 		<content:encoded><![CDATA[<!-- wp:group {"metadata":{"name":"Mein fantastischer Block"},"align":"full","style":{"spacing":{"margin":{"top":"0","bottom":"0"},"padding":{"top":"var:preset|spacing|20","bottom":"var:preset|spacing|20","left":"0","right":"0"}}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group alignfull" style="margin-top:0;margin-bottom:0;padding-top:var(--wp--preset--spacing--20);padding-right:0;padding-bottom:var(--wp--preset--spacing--20);padding-left:0"><!-- wp:group {"metadata":{"name":"Block"},"align":"wide","style":{"spacing":{"padding":{"top":"var:preset|spacing|40","bottom":"var:preset|spacing|40","left":"var:preset|spacing|20","right":"var:preset|spacing|20"}},"border":{"radius":"16px"},"color":{"gradient":"linear-gradient(0deg,rgba(56,88,232,0.61) 0%,rgba(56,88,232,0.1) 99%)"}},"layout":{"type":"constrained"}} -->
