@@ -5,7 +5,7 @@
     "wp": "latest"
   },
   "siteOptions": {
-    "blogname": "Playground Demo"
+    "blogname": "Playground Blueprint Demo"
   },
   "steps": [
     {
@@ -17,5 +17,5 @@
     }
   ],
   "login": true,
-  "landingPage": "/wp-admin/post.php?action=edit&post=1"
+  "landingPage": "/wp-admin/post.php?action=edit&post=4"
 }
