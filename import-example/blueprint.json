@@ -12,7 +12,7 @@
       "step": "importWxr",
       "file": {
         "resource": "url",
-        "url": "https://raw.githubusercontent.com/rfluethi/WordPress-Seminar-Playgrounds/main/playground/import-example/import.xml"
+        "url": "https://raw.githubusercontent.com/rfluethi/WordPress-Playgrounds/main/playground/import-example/import.xml"
       }
     }
   ],
