@@ -16,6 +16,5 @@
       }
     }
   ],
-  "login": true,
-  "landingPage": "/wp-admin/"
+  "login": true
 }
