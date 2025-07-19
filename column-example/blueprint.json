@@ -1,0 +1,21 @@
+{
+  "$schema": "https://playground.wordpress.net/blueprint-schema.json",
+  "preferredVersions": {
+    "php": "latest",
+    "wp": "latest"
+  },
+  "siteOptions": {
+    "blogname": "Playground Column Example"
+  },
+  "steps": [
+    {
+      "step": "importWxr",
+      "file": {
+        "resource": "url",
+        "url": "https://raw.githubusercontent.com/rfluethi/WordPress-Playgrounds/main/column-example/column-example.xml"
+      }
+    }
+  ],
+  "login": true,
+  "landingPage": "/wp-admin/post.php?action=edit&post=4"
+}
