@@ -17,5 +17,5 @@
     }
   ],
   "login": true,
-  "landingPage": "/wp-admin/post.php?action=edit&post=17"
+  "landingPage": "/wp-admin/edit.php?post_type=page"
 }
