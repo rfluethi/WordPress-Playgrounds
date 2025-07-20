@@ -3,6 +3,8 @@
 
 This code demonstrates a three-column WordPress block with automatic height adjustment. The layout ensures consistent vertical alignment of all buttons, regardless of the text content length in individual columns.
 
+![Column Example Screenshot](https://raw.githubusercontent.com/rfluethi/WordPress-Playgrounds/main/column-example/column-example-screenshot.png)
+
 ## Files
 
 - **blueprint.json**: This blueprint file contains the configuration for the WordPress Playground. It specifies the steps needed to import the posts from the `column-example.xml` file.
@@ -12,7 +14,7 @@ This code demonstrates a three-column WordPress block with automatic height adju
 
 To use this example, you can start the WordPress Playground with the following URL:
 
-```
+```url
 https://playground.wordpress.net/?mode=seamless&blueprint-url=https://raw.githubusercontent.com/rfluethi/WordPress-Playgrounds/main/column-example/blueprint.json
 ```
 

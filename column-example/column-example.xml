@@ -362,8 +362,8 @@
 		<dc:creator><![CDATA[admin]]></dc:creator>
 		<guid isPermaLink="false">https://playground.wordpress.net/scope:clever-sunny-town/?page_id=17</guid>
 		<description></description>
-		<content:encoded><![CDATA[<!-- wp:heading {"textAlign":"left","style":{"spacing":{"margin":{"bottom":"var:preset|spacing|40"}}}} -->
-<h1 class="wp-block-heading has-text-align-left" style="margin-bottom:var(--wp--preset--spacing--40)">Column Example</h1>
+		<content:encoded><![CDATA[<!-- wp:heading {"textAlign":"left","align":"wide","style":{"spacing":{"margin":{"bottom":"var:preset|spacing|40"}}}} -->
+<h1 class="wp-block-heading alignwide has-text-align-left" style="margin-bottom:var(--wp--preset--spacing--40)">Column Example</h1>
 <!-- /wp:heading -->
 
 <!-- wp:columns {"align":"wide"} -->
