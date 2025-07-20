@@ -6,27 +6,27 @@ This example demonstrates how to import WordPress content using WXR (WordPress e
 
 ![Screenshot](import-example.png)
 
-## 🎯 What You'll Learn
+## What You'll Learn
 
 - How to configure WXR imports in blueprints
 - WordPress content import process
 - Automatic post redirection after import
 - Blueprint configuration best practices
 
-## 📋 Example Details
+## Example Details
 
 - **Difficulty**: Beginner
 - **Setup Time**: < 1 minute  
 - **WordPress Features**: WXR Import, Post Management
 - **Use Cases**: Content migration, site setup, bulk imports
 
-## 📁 Files
+## Files
 
 - **`blueprint.json`**: Playground configuration that sets up WordPress and imports content
 - **`import.xml`**: Sample WXR file containing post data, pages, and media
 - **`import-example.png`**: Screenshot showing the expected result
 
-## 🚀 Quick Start
+## Quick Start
 
 **Option 1: Direct Launch**
 Click the badge above or use this URL:
@@ -40,7 +40,7 @@ https://playground.wordpress.net/?mode=seamless&blueprint-url=https://raw.github
 2. Go to [WordPress Playground](https://playground.wordpress.net/)
 3. Paste the blueprint URL in the configuration
 
-## 🔧 How It Works
+## How It Works
 
 ### Blueprint Configuration
 

@@ -7,10 +7,10 @@
 
 Welcome to the WordPress Playgrounds repository! This collection of interactive blueprints demonstrates various WordPress features and use cases through the WordPress Playground platform. Each example provides hands-on learning experiences with real WordPress environments.
 
-## 📚 Table of Contents
+## Table of Contents
 
 - [WordPress Playgrounds](#wordpress-playgrounds)
-  - [📚 Table of Contents](#-table-of-contents)
+  - [Table of Contents](#table-of-contents)
   - [What is WordPress Playground?](#what-is-wordpress-playground)
   - [Available Examples](#available-examples)
     - [Import Example](#import-example)
@@ -22,7 +22,7 @@ Welcome to the WordPress Playgrounds repository! This collection of interactive 
   - [Repository Structure](#repository-structure)
   - [Blueprint Configuration](#blueprint-configuration)
   - [Learning Resources](#learning-resources)
-  - [🙋‍♀️ Frequently Asked Questions](#️-frequently-asked-questions)
+  - [Frequently Asked Questions](#frequently-asked-questions)
     - [What is a Blueprint?](#what-is-a-blueprint)
     - [Can I use these examples on my live site?](#can-i-use-these-examples-on-my-live-site)
     - [How do I create my own blueprint?](#how-do-i-create-my-own-blueprint)
@@ -51,10 +51,10 @@ WordPress Playground allows you to run WordPress directly in your browser withou
   <img src="import-example/import-example.png" alt="Import Example" width="600">
 </a>
 
-**📋 Demonstrates**: WordPress content import functionality using WXR files  
-**🎯 Difficulty**: Beginner  
-**⏱️ Setup Time**: < 1 minute  
-**🔧 Use Cases**: Content migration, site setup, bulk imports  
+**Demonstrates**: WordPress content import functionality using WXR files  
+**Difficulty**: Beginner  
+**Setup Time**: < 1 minute  
+**Use Cases**: Content migration, site setup, bulk imports  
 
 This example shows how to automatically import posts, pages, and media into a WordPress site using the WordPress Playground. Perfect for understanding how content migration works and testing import processes without affecting live sites.
 
@@ -77,10 +77,10 @@ This example shows how to automatically import posts, pages, and media into a Wo
   <img src="column-example/column-example.png" alt="Column Example" width="600">
 </a>
 
-**📋 Demonstrates**: Advanced three-column WordPress block layouts with automatic height adjustment  
-**🎯 Difficulty**: Intermediate  
-**⏱️ Setup Time**: < 1 minute  
-**🔧 Use Cases**: Layout design, responsive columns, button alignment  
+**Demonstrates**: Advanced three-column WordPress block layouts with automatic height adjustment  
+**Difficulty**: Intermediate  
+**Setup Time**: < 1 minute  
+**Use Cases**: Layout design, responsive columns, button alignment  
 
 This example showcases how to create responsive column layouts that maintain consistent button alignment regardless of content length - a common challenge in WordPress design. Ideal for learning advanced block editor techniques.
 
@@ -168,7 +168,7 @@ Each blueprint is a JSON file that configures the WordPress Playground environme
 - **Blueprint Schema**: [Blueprint JSON Schema](https://playground.wordpress.net/blueprint-schema.json)
 - **WordPress Block Editor**: [Block Editor Handbook](https://developer.wordpress.org/block-editor/)
 
-## 🙋‍♀️ Frequently Asked Questions
+## Frequently Asked Questions
 
 ### What is a Blueprint?
 A blueprint is a JSON configuration file that tells WordPress Playground how to set up a WordPress environment. It can include plugins, themes, content, and configurations.
