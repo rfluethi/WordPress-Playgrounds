@@ -1,7 +1,8 @@
-
 # Import Example
 
 This directory contains an example that demonstrates how to import a post into the WordPress Playground. The provided files are designed to showcase the import functionality and help users understand how to use blueprints to configure their WordPress Playground environments.
+
+![Screenshot](import-example.png)
 
 ## Files
 
@@ -27,5 +28,6 @@ https://playground.wordpress.net/?mode=seamless&blueprint-url=https://raw.github
 ```
 /import-example/
 ├── blueprint.json
+├── import-example.png
 └── import.xml
 ```
