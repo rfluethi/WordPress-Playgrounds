@@ -1,7 +1,7 @@
 
 # Column Example
 
-This directory contains an example that demonstrates how to import posts into the WordPress Playground. The provided files are designed to showcase the import functionality and help users understand how to use blueprints to configure their WordPress Playground environments.
+This code demonstrates a three-column WordPress block with automatic height adjustment. The layout ensures consistent vertical alignment of all buttons, regardless of the text content length in individual columns.
 
 ## Files
 
@@ -10,7 +10,7 @@ This directory contains an example that demonstrates how to import posts into th
 
 ## Usage
 
-To use this example, you can start the WordPress Playground with the following URL structure:
+To use this example, you can start the WordPress Playground with the following URL:
 
 ```
 https://playground.wordpress.net/?mode=seamless&blueprint-url=https://raw.githubusercontent.com/rfluethi/WordPress-Playgrounds/main/column-example/blueprint.json
