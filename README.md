@@ -53,7 +53,6 @@ WordPress Playground allows you to run WordPress directly in your browser withou
 
 **Demonstrates**: WordPress content import functionality using WXR files  
 **Difficulty**: Beginner  
-**Setup Time**: < 1 minute  
 **Use Cases**: Content migration, site setup, bulk imports  
 
 This example shows how to automatically import posts, pages, and media into a WordPress site using the WordPress Playground. Perfect for understanding how content migration works and testing import processes without affecting live sites.
@@ -79,7 +78,6 @@ This example shows how to automatically import posts, pages, and media into a Wo
 
 **Demonstrates**: Advanced three-column WordPress block layouts with automatic height adjustment  
 **Difficulty**: Intermediate  
-**Setup Time**: < 1 minute  
 **Use Cases**: Layout design, responsive columns, button alignment  
 
 This example showcases how to create responsive column layouts that maintain consistent button alignment regardless of content length - a common challenge in WordPress design. Ideal for learning advanced block editor techniques.

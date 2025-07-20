@@ -16,7 +16,6 @@ This example demonstrates how to import WordPress content using WXR (WordPress e
 ## Example Details
 
 - **Difficulty**: Beginner
-- **Setup Time**: < 1 minute  
 - **WordPress Features**: WXR Import, Post Management
 - **Use Cases**: Content migration, site setup, bulk imports
 

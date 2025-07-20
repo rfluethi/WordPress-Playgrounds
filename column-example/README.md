@@ -18,7 +18,6 @@ This example demonstrates advanced three-column WordPress block layouts with aut
 ## Example Details
 
 - **Difficulty**: Intermediate
-- **Setup Time**: < 1 minute  
 - **WordPress Features**: Block Editor, Custom CSS, Responsive Design
 - **Use Cases**: Product showcases, service listings, feature comparisons
 
