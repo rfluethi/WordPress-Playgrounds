@@ -1,6 +1,38 @@
 # WordPress Playgrounds
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![GitHub issues](https://img.shields.io/github/issues/rfluethi/WordPress-Playgrounds)](https://github.com/rfluethi/WordPress-Playgrounds/issues)
+[![GitHub stars](https://img.shields.io/github/stars/rfluethi/WordPress-Playgrounds)](https://github.com/rfluethi/WordPress-Playgrounds/stargazers)
+[![WordPress Playground](https://img.shields.io/badge/WordPress-Playground-blue.svg)](https://playground.wordpress.net/)
+
 Welcome to the WordPress Playgrounds repository! This collection of interactive blueprints demonstrates various WordPress features and use cases through the WordPress Playground platform. Each example provides hands-on learning experiences with real WordPress environments.
+
+## 📚 Table of Contents
+
+- [WordPress Playgrounds](#wordpress-playgrounds)
+  - [📚 Table of Contents](#-table-of-contents)
+  - [What is WordPress Playground?](#what-is-wordpress-playground)
+  - [Available Examples](#available-examples)
+    - [Import Example](#import-example)
+    - [Column Example](#column-example)
+  - [Quick Start](#quick-start)
+    - [Option 1: Use Pre-built Examples](#option-1-use-pre-built-examples)
+    - [Option 2: Clone and Customize](#option-2-clone-and-customize)
+    - [Option 3: Create Your Own Blueprint](#option-3-create-your-own-blueprint)
+  - [Repository Structure](#repository-structure)
+  - [Blueprint Configuration](#blueprint-configuration)
+  - [Learning Resources](#learning-resources)
+  - [🙋‍♀️ Frequently Asked Questions](#️-frequently-asked-questions)
+    - [What is a Blueprint?](#what-is-a-blueprint)
+    - [Can I use these examples on my live site?](#can-i-use-these-examples-on-my-live-site)
+    - [How do I create my own blueprint?](#how-do-i-create-my-own-blueprint)
+    - [Are there any limitations?](#are-there-any-limitations)
+    - [Can I save my work from the Playground?](#can-i-save-my-work-from-the-playground)
+  - [Contributing](#contributing)
+    - [How to Contribute](#how-to-contribute)
+    - [Blueprint Guidelines](#blueprint-guidelines)
+  - [License](#license)
+  - [Acknowledgments](#acknowledgments)
 
 ## What is WordPress Playground?
 
@@ -19,9 +51,12 @@ WordPress Playground allows you to run WordPress directly in your browser withou
   <img src="import-example/import-example.png" alt="Import Example" width="600">
 </a>
 
-**Demonstrates**: WordPress content import functionality using WXR files
+**📋 Demonstrates**: WordPress content import functionality using WXR files  
+**🎯 Difficulty**: Beginner  
+**⏱️ Setup Time**: < 1 minute  
+**🔧 Use Cases**: Content migration, site setup, bulk imports  
 
-This example shows how to automatically import posts, pages, and media into a WordPress site using the WordPress Playground. Perfect for understanding how content migration works.
+This example shows how to automatically import posts, pages, and media into a WordPress site using the WordPress Playground. Perfect for understanding how content migration works and testing import processes without affecting live sites.
 
 **Features**:
 
@@ -42,9 +77,12 @@ This example shows how to automatically import posts, pages, and media into a Wo
   <img src="column-example/column-example.png" alt="Column Example" width="600">
 </a>
 
-**Demonstrates**: Advanced three-column WordPress block layouts with automatic height adjustment
+**📋 Demonstrates**: Advanced three-column WordPress block layouts with automatic height adjustment  
+**🎯 Difficulty**: Intermediate  
+**⏱️ Setup Time**: < 1 minute  
+**🔧 Use Cases**: Layout design, responsive columns, button alignment  
 
-This example showcases how to create responsive column layouts that maintain consistent button alignment regardless of content length - a common challenge in WordPress design.
+This example showcases how to create responsive column layouts that maintain consistent button alignment regardless of content length - a common challenge in WordPress design. Ideal for learning advanced block editor techniques.
 
 **Features**:
 
@@ -129,6 +167,23 @@ Each blueprint is a JSON file that configures the WordPress Playground environme
 - **WordPress Playground Documentation**: [playground.wordpress.net](https://playground.wordpress.net/)
 - **Blueprint Schema**: [Blueprint JSON Schema](https://playground.wordpress.net/blueprint-schema.json)
 - **WordPress Block Editor**: [Block Editor Handbook](https://developer.wordpress.org/block-editor/)
+
+## 🙋‍♀️ Frequently Asked Questions
+
+### What is a Blueprint?
+A blueprint is a JSON configuration file that tells WordPress Playground how to set up a WordPress environment. It can include plugins, themes, content, and configurations.
+
+### Can I use these examples on my live site?
+These examples are designed for learning and testing. While the techniques can be applied to live sites, always test thoroughly in a staging environment first.
+
+### How do I create my own blueprint?
+Start by examining the existing `blueprint.json` files in this repository. The [Blueprint Schema](https://playground.wordpress.net/blueprint-schema.json) provides full documentation of available options.
+
+### Are there any limitations?
+WordPress Playground runs in the browser, so some server-specific features may not work. It's perfect for testing layouts, content, and most WordPress functionality.
+
+### Can I save my work from the Playground?
+WordPress Playground is temporary - changes are lost when you close the browser. Use it for testing and learning, then implement solutions on your actual site.
 
 ## Contributing
 
