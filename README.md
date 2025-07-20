@@ -15,7 +15,9 @@ WordPress Playground allows you to run WordPress directly in your browser withou
 
 ### Import Example
 
-[![Import Example](import-example/import-example.png)](import-example/)
+<a href="import-example/">
+  <img src="import-example/import-example.png" alt="Import Example" width="600">
+</a>
 
 **Demonstrates**: WordPress content import functionality using WXR files
 
@@ -36,7 +38,9 @@ This example shows how to automatically import posts, pages, and media into a Wo
 
 ### Column Example
 
-[![Column Example](column-example/column-example.png)](column-example/)
+<a href="column-example/">
+  <img src="column-example/column-example.png" alt="Column Example" width="600">
+</a>
 
 **Demonstrates**: Advanced three-column WordPress block layouts with automatic height adjustment
 
