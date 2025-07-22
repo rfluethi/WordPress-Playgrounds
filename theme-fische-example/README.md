@@ -52,6 +52,28 @@ https://playground.wordpress.net/?blueprint=https://raw.githubusercontent.com/rf
 https://playground.wordpress.net/?blueprint=https://raw.githubusercontent.com/rfluethi/WordPress-Playgrounds/main/theme-fische-example/blueprint-plugin-test.json
 ```
 
+### ✅ ERFOLG! Blueprints funktionieren jetzt
+
+Da Test 2a/2b funktionieren, können wir jetzt die Fische-Demo testen:
+
+**🐟 Test 5 - Einfache Fische-Demo (inline):**
+
+```url
+https://playground.wordpress.net/?blueprint=%7B%22steps%22%3A%5B%7B%22step%22%3A%22setSiteOptions%22%2C%22options%22%3A%7B%22blogname%22%3A%22Fische%20Demo%20FUNKTIONIERT%22%7D%7D%5D%7D
+```
+
+**🐟 Test 6 - Vollständige Fische-Demo (GitHub, nach 5 Min):**
+
+```url
+https://playground.wordpress.net/?blueprint=https://raw.githubusercontent.com/rfluethi/WordPress-Playgrounds/main/theme-fische-example/blueprint.json
+```
+
+**🐟 Test 7 - Cache-Busting (falls Test 6 nicht geht):**
+
+```url
+https://playground.wordpress.net/?blueprint=https://raw.githubusercontent.com/rfluethi/WordPress-Playgrounds/main/theme-fische-example/blueprint.json&v=20250722
+```
+
 ### 🔍 DIAGNOSE - Was Sie sehen sollten
 
 - **Test 1**: Leerer WordPress mit Standard-Titel "Just another WordPress site"
