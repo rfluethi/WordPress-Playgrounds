@@ -99,18 +99,20 @@ This example showcases how to create responsive column layouts that maintain con
 
 ### Theme Fische Example
 
-**Demonstrates**: WordPress theme installation and configuration with starter content  
+**Demonstrates**: WordPress theme installation and configuration with complete demo content  
 **Difficulty**: Beginner  
-**Use Cases**: Theme testing, demonstration, educational purposes  
+**Use Cases**: Theme testing, content demonstration, educational projects  
 
-This example shows how to automatically install and activate a WordPress theme using the WordPress Playground. Demonstrates the Twenty Twenty-Five theme with starter content, perfect for theme testing and educational demonstrations.
+This example shows how to automatically install and activate a WordPress theme with a complete fish & aquarium website. Features custom content, navigation menus, and site configuration - perfect for demonstrating a fully functional WordPress site.
 
 **Features**:
 
-- Automatic theme installation from WordPress.org
-- Theme activation with starter content
-- Custom site configuration
-- Professional demo setup
+- Complete fish & aquarium demo website
+- Automatic theme installation and activation
+- Custom navigation menu creation
+- WXR content import with posts, pages, and categories
+- Site configuration and customizer settings
+- Development environment setup
 
 **Try it**: [Launch Theme Example](https://playground.wordpress.net/?mode=seamless&blueprint-url=https://raw.githubusercontent.com/rfluethi/WordPress-Playgrounds/main/theme-fische-example/blueprint.json)
 
@@ -155,8 +157,9 @@ WordPress-Playgrounds/
 │   ├── column-example.png      # Example screenshot
 │   └── README.md              # Detailed documentation
 ├── theme-fische-example/
-│   ├── blueprint.json          # Basic theme setup
-│   ├── blueprint-extended.json # Extended configuration
+│   ├── blueprint.json          # Theme setup with WXR import
+│   ├── demo-content-complete.xml # Full demo content
+│   ├── demo-content.xml        # Basic demo content
 │   └── README.md              # Detailed documentation
 └── LICENSE
 ```
