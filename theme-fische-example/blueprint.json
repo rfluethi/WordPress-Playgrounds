@@ -23,7 +23,7 @@
       "step": "importWxr",
       "file": {
         "resource": "url",
-        "url": "./demo-content-complete.xml"
+        "url": "https://raw.githubusercontent.com/rfluethi/WordPress-Playgrounds/main/theme-fische-example/demo-content-complete.xml"
       }
     },
     {

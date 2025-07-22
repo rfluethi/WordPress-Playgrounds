@@ -11,10 +11,38 @@ Dieses Verzeichnis enthält einen WordPress Playground Blueprint mit einem kompl
 
 ### Direkter Link zu WordPress Playground
 
-Kopieren Sie diese Dateien in ein GitHub Repository und verwenden Sie folgenden Link:
+**Vollständige Version (mit allen Inhalten):**
 
+```url
+https://playground.wordpress.net/?blueprint=https://raw.githubusercontent.com/rfluethi/WordPress-Playgrounds/main/theme-fische-example/blueprint.json
 ```
-https://playground.wordpress.net/?blueprint=https://raw.githubusercontent.com/IHR-USERNAME/IHR-REPO/main/blueprint.json
+
+**Vereinfachte Version (zum Testen):**
+
+```url
+https://playground.wordpress.net/?blueprint=https://raw.githubusercontent.com/rfluethi/WordPress-Playgrounds/main/theme-fische-example/blueprint-simple.json
+```
+
+**Minimale Version (nur Theme, falls Probleme auftreten):**
+
+```url
+https://playground.wordpress.net/?blueprint=https://raw.githubusercontent.com/rfluethi/WordPress-Playgrounds/main/theme-fische-example/blueprint-minimal.json
+```
+
+### Problembehandlung
+
+Falls der Playground nicht lädt:
+
+1. Versuchen Sie zuerst die **minimale Version**
+2. Wenn diese funktioniert, testen Sie die **vereinfachte Version**
+3. Zuletzt versuchen Sie die **vollständige Version**
+
+**Cache-Busting Links (falls Browser-Cache Probleme verursacht):**
+
+- Fügen Sie `&v=` + aktuelle Zeit an die URL an, z.B.:
+
+```url
+https://playground.wordpress.net/?blueprint=https://raw.githubusercontent.com/rfluethi/WordPress-Playgrounds/main/theme-fische-example/blueprint.json&v=20250122
 ```
 
 ### Lokale Verwendung
