@@ -1,0 +1,21 @@
+{
+  "steps": [
+    {
+      "step": "login"
+    },
+    {
+      "step": "installPlugin",
+      "pluginData": {
+        "resource": "wordpress.org/plugins",
+        "slug": "hello-dolly"
+      }
+    },
+    {
+      "step": "setSiteOptions",
+      "options": {
+        "blogname": "WordPress Playground Test",
+        "blogdescription": "Funktionierender Test"
+      }
+    }
+  ]
+}

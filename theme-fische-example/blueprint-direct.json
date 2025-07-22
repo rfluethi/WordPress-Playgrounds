@@ -1,0 +1,21 @@
+{
+  "preferredVersions": {
+    "php": "8.0",
+    "wp": "6.4"
+  },
+  "login": true,
+  "steps": [
+    {
+      "step": "setSiteOptions",
+      "options": {
+        "blogname": "Fische Demo - Direkt",
+        "blogdescription": "WordPress Playground Test"
+      }
+    },
+    {
+      "step": "writeFile",
+      "path": "/wordpress/wp-content/themes/twentytwentyfour/index.php",
+      "data": "<?php get_header(); ?>\n<h1>Fische Demo funktioniert!</h1>\n<p>Dieses Blueprint wurde erfolgreich geladen.</p>\n<?php get_footer(); ?>"
+    }
+  ]
+}
