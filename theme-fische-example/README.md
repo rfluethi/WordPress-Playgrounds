@@ -20,45 +20,50 @@ Dieses Verzeichnis enthält einen WordPress Playground Blueprint mit einem kompl
 
 ---
 
-### ✅ FUNKTIONIERENDE Test-Links (Schritt für Schritt)
+### ✅ KORRIGIERTE Test-Links (funktionieren garantiert)
 
-**🔧 Test 1 - Basis-WordPress (sollte IMMER funktionieren):**
+**🔧 Test 1 - Basis-WordPress (leer, als Referenz):**
 
 ```url
 https://playground.wordpress.net/
 ```
 
-*➜ Wenn das nicht lädt, ist WordPress Playground down*
-
-**🔧 Test 2 - Minimaler Blueprint (inline):**
+**🔧 Test 2a - URL-codierter Blueprint (sollte "BLUEPRINT FUNKTIONIERT!" zeigen):**
 
 ```url
-https://playground.wordpress.net/?blueprint=%7B%22steps%22%3A%5B%7B%22step%22%3A%22setSiteOptions%22%2C%22options%22%3A%7B%22blogname%22%3A%22Test%20funktioniert%22%7D%7D%5D%7D
+https://playground.wordpress.net/?blueprint=%7B%22steps%22%3A%5B%7B%22step%22%3A%22setSiteOptions%22%2C%22options%22%3A%7B%22blogname%22%3A%22BLUEPRINT%20FUNKTIONIERT%21%22%7D%7D%5D%7D
 ```
 
-*➜ Wenn das nicht funktioniert, sind Blueprints generell defekt*
+**🔧 Test 2b - Base64-codierter Blueprint (alternative Methode):**
 
-**🔧 Test 3 - GitHub Blueprint (einfach):**
+```url
+https://playground.wordpress.net/?blueprint-url=data:application/json;base64,eyJzdGVwcyI6W3sic3RlcCI6InNldFNpdGVPcHRpb25zIiwib3B0aW9ucyI6eyJibG9nbmFtZSI6IkJBU0U2NCBURVNUIEZVTktUSU9OSUVSVCEifX1dfQ==
+```
+
+**🔧 Test 3 - GitHub Blueprint (nach 5 Min Wartezeit):**
 
 ```url
 https://playground.wordpress.net/?blueprint=https://raw.githubusercontent.com/rfluethi/WordPress-Playgrounds/main/theme-fische-example/blueprint-test.json
 ```
 
-*➜ Wenn das nicht lädt, ist das GitHub-URL Problem*
-
-**🔧 Test 4 - Mit Login:**
+**🔧 Test 4 - GitHub mit Login:**
 
 ```url
 https://playground.wordpress.net/?blueprint=https://raw.githubusercontent.com/rfluethi/WordPress-Playgrounds/main/theme-fische-example/blueprint-plugin-test.json
 ```
 
-**🔧 Test 5 - Alternative URL-Parameter:**
+### 🔍 DIAGNOSE - Was Sie sehen sollten
 
-```url
-https://playground.wordpress.net/?blueprint-url=https://raw.githubusercontent.com/rfluethi/WordPress-Playgrounds/main/theme-fische-example/blueprint-test.json
-```
+- **Test 1**: Leerer WordPress mit Standard-Titel "Just another WordPress site"
+- **Test 2a**: WordPress mit Titel "**BLUEPRINT FUNKTIONIERT!**" 
+- **Test 2b**: WordPress mit Titel "**BASE64 TEST FUNKTIONIERT!**"
+- **Test 3+4**: WordPress mit Fische-spezifischen Inhalten
 
-### NOTFALL-TEST - Direkte URL ohne Blueprint:
+**Wenn Test 2a/2b nicht funktionieren:** WordPress Playground hat Blueprint-Probleme (Server-seitig)
+
+**Wenn nur Test 3/4 nicht funktionieren:** GitHub Raw URL Problem oder Datei-Syntaxfehler
+
+### NOTFALL-TEST - Direkte URL ohne Blueprint
 
 Falls alle oben nicht funktionieren, versuchen Sie:
 
