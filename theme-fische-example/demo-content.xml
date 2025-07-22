@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0"
+	xmlns:excerpt="http://wordpress.org/export/1.2/excerpt/"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:wp="http://wordpress.org/export/1.2/"
+>
+
+<channel>
+	<title>Seminar Demo Fische</title>
+	<link>http://localhost</link>
+	<description>Demo-Website für WordPress Playground mit Fisch-Thema</description>
+	<pubDate>Mon, 22 Jul 2025 10:00:00 +0000</pubDate>
+	<language>de-DE</language>
+	<wp:wxr_version>1.2</wp:wxr_version>
+	<wp:base_site_url>http://localhost</wp:base_site_url>
+	<wp:base_blog_url>http://localhost</wp:base_blog_url>
+
+	<wp:author>
+		<wp:author_id>1</wp:author_id>
+		<wp:author_login>admin</wp:author_login>
+		<wp:author_email>admin@example.com</wp:author_email>
+		<wp:author_display_name>Admin</wp:author_display_name>
+		<wp:author_first_name>Admin</wp:author_first_name>
+		<wp:author_last_name>User</wp:author_last_name>
+	</wp:author>
+
+	<item>
+		<title>Willkommen bei der Fisch-Demo</title>
+		<link>http://localhost/willkommen-bei-der-fisch-demo/</link>
+		<pubDate>Mon, 22 Jul 2025 10:00:00 +0000</pubDate>
+		<dc:creator>admin</dc:creator>
+		<guid isPermaLink="false">http://localhost/?p=1</guid>
+		<description></description>
+		<content:encoded><![CDATA[<!-- wp:paragraph -->
+<p>Herzlich willkommen zu unserer faszinierenden Unterwasserwelt! Diese Demo-Website zeigt die Vielfalt und Schönheit verschiedener Fischarten.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Entdecken Sie die Welt der Aquaristik</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Von farbenprächtigen Clownfischen bis hin zu eleganten Diskusfischen - hier finden Sie alles über die beliebtesten Aquarienfische.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul class="wp-block-list">
+<li>Süßwasserfische</li>
+<li>Salzwasserfische</li>
+<li>Tropische Arten</li>
+<li>Pflegeleichte Anfängerfische</li>
+</ul>
+<!-- /wp:list -->]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>1</wp:post_id>
+		<wp:post_date>2025-07-22 10:00:00</wp:post_date>
+		<wp:post_date_gmt>2025-07-22 10:00:00</wp:post_date_gmt>
+		<wp:post_name>willkommen-bei-der-fisch-demo</wp:post_name>
+		<wp:status>publish</wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type>post</wp:post_type>
+		<wp:post_password></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+	</item>
+
+	<item>
+		<title>Der Clownfisch - Nemo und seine Verwandten</title>
+		<link>http://localhost/clownfisch-nemo/</link>
+		<pubDate>Mon, 22 Jul 2025 11:00:00 +0000</pubDate>
+		<dc:creator>admin</dc:creator>
+		<guid isPermaLink="false">http://localhost/?p=2</guid>
+		<description></description>
+		<content:encoded><![CDATA[<!-- wp:paragraph -->
+<p>Der Clownfisch, auch bekannt als Anemonenfisch, ist einer der bekanntesten und beliebtesten Meeresfische. Dank des Films "Findet Nemo" wurde er weltberühmt.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Lebensraum und Verhalten</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Clownfische leben in einer Symbiose mit Seeanemonen. Die Anemonententakel bieten ihnen Schutz vor Fressfeinden, während die Fische die Anemone von Parasiten befreien.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Aquarium-Haltung</h2>
+<!-- /wp:heading -->
+
+<!-- wp:list -->
+<ul class="wp-block-list">
+<li>Mindestens 100 Liter Salzwasser-Aquarium</li>
+<li>Wassertemperatur: 24-26°C</li>
+<li>pH-Wert: 8,1-8,4</li>
+<li>Gesellig - am besten paarweise halten</li>
+</ul>
+<!-- /wp:list -->]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>2</wp:post_id>
+		<wp:post_date>2025-07-22 11:00:00</wp:post_date>
+		<wp:post_date_gmt>2025-07-22 11:00:00</wp:post_date_gmt>
+		<wp:post_name>clownfisch-nemo</wp:post_name>
+		<wp:status>publish</wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type>post</wp:post_type>
+		<wp:post_password></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+	</item>
+
+	<item>
+		<title>Diskusfische - Die Könige des Aquariums</title>
+		<link>http://localhost/diskusfische-koenige/</link>
+		<pubDate>Mon, 22 Jul 2025 12:00:00 +0000</pubDate>
+		<dc:creator>admin</dc:creator>
+		<guid isPermaLink="false">http://localhost/?p=3</guid>
+		<description></description>
+		<content:encoded><![CDATA[<!-- wp:paragraph -->
+<p>Diskusfische gelten als die Könige der Süßwasser-Aquaristik. Mit ihrer majestätischen Erscheinung und den leuchtenden Farben sind sie echte Hingucker.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Besondere Merkmale</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Die runde, scheibenförmige Körperform und die intensiven Farben machen Diskusfische unverwechselbar. Sie können bis zu 20 cm groß werden.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Haltungsanforderungen</h2>
+<!-- /wp:heading -->
+
+<!-- wp:list -->
+<ul class="wp-block-list">
+<li>Große Aquarien ab 300 Liter</li>
+<li>Weiches, saures Wasser (pH 6,0-6,8)</li>
+<li>Hohe Wassertemperatur: 28-30°C</li>
+<li>Häufige Wasserwechsel</li>
+<li>Ruhige, stressfreie Umgebung</li>
+</ul>
+<!-- /wp:list -->]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>3</wp:post_id>
+		<wp:post_date>2025-07-22 12:00:00</wp:post_date>
+		<wp:post_date_gmt>2025-07-22 12:00:00</wp:post_date_gmt>
+		<wp:post_name>diskusfische-koenige</wp:post_name>
+		<wp:status>publish</wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type>post</wp:post_type>
+		<wp:post_password></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+	</item>
+
+	<item>
+		<title>Über uns</title>
+		<link>http://localhost/ueber-uns/</link>
+		<pubDate>Mon, 22 Jul 2025 13:00:00 +0000</pubDate>
+		<dc:creator>admin</dc:creator>
+		<guid isPermaLink="false">http://localhost/?page_id=4</guid>
+		<description></description>
+		<content:encoded><![CDATA[<!-- wp:paragraph -->
+<p>Willkommen bei der Seminar Demo Fische - Ihrer ersten Anlaufstelle für alles rund um die Aquaristik!</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Unsere Mission</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Wir möchten die Faszination der Unterwasserwelt vermitteln und Aquaristik-Interessierten dabei helfen, die richtige Auswahl für ihr Aquarium zu treffen.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Was Sie hier finden</h2>
+<!-- /wp:heading -->
+
+<!-- wp:list -->
+<ul class="wp-block-list">
+<li>Detaillierte Fischporträts</li>
+<li>Haltungsempfehlungen</li>
+<li>Aquarium-Einrichtungstipps</li>
+<li>Pflegeanleitungen</li>
+</ul>
+<!-- /wp:list -->
+
+<!-- wp:paragraph -->
+<p>Diese Demo-Website wurde mit WordPress Playground erstellt und zeigt die Möglichkeiten moderner Web-Technologien.</p>
+<!-- /wp:paragraph -->]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>4</wp:post_id>
+		<wp:post_date>2025-07-22 13:00:00</wp:post_date>
+		<wp:post_date_gmt>2025-07-22 13:00:00</wp:post_date_gmt>
+		<wp:post_name>ueber-uns</wp:post_name>
+		<wp:status>publish</wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type>page</wp:post_type>
+		<wp:post_password></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+	</item>
+
+</channel>
+</rss>

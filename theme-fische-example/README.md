@@ -1,121 +1,65 @@
-# WordPress Playground Blueprint - Seminar Demo Fische
+# WordPress Playground Fische-Demo
 
-Dieses Blueprint ermöglicht es, Ihr WordPress-Theme direkt im Browser mit WordPress Playground zu testen.
+Dieses Verzeichnis enthält einen WordPress Playground Blueprint mit einem kompletten Fische & Aquarien-Theme basierend auf Twenty Twenty-Five.
 
-## 🚀 Blueprint verwenden
+## Dateien
 
-### Option 1: Direkter Link
-Klicken Sie auf diesen Link, um das WordPress Playground mit Ihrem Theme zu öffnen:
+- **`blueprint.json`** - Das WordPress Playground Blueprint
+- **`demo-content-complete.xml`** - WXR-Export mit vollständigem Fische-Content
+
+## Verwendung
+
+### Direkter Link zu WordPress Playground
+
+Kopieren Sie diese Dateien in ein GitHub Repository und verwenden Sie folgenden Link:
 
 ```
-https://playground.wordpress.net/?blueprint-url=https://raw.githubusercontent.com/[IHR-GITHUB-USERNAME]/[IHR-REPOSITORY-NAME]/main/blueprint.json
+https://playground.wordpress.net/?blueprint=https://raw.githubusercontent.com/IHR-USERNAME/IHR-REPO/main/blueprint.json
 ```
 
-**Wichtig:** Ersetzen Sie `[IHR-GITHUB-USERNAME]` und `[IHR-REPOSITORY-NAME]` mit Ihren tatsächlichen GitHub-Daten.
+### Lokale Verwendung
 
-### Option 2: Blueprint hochladen
-1. Besuchen Sie [WordPress Playground](https://playground.wordpress.net/)
-2. Klicken Sie auf "Upload Blueprint"
-3. Laden Sie die `blueprint.json` Datei hoch
+1. Beide Dateien in ein Verzeichnis kopieren
+2. Das Verzeichnis auf einen Webserver hochladen
+3. WordPress Playground mit dem Blueprint-Link öffnen
 
-## 📋 Was macht das Blueprint?
+## Inhalt der Demo
 
-Das Blueprint führt folgende Schritte aus:
+### Kategorien
+- **Süßwasserfische** - Alles über Süßwasserfische und ihre Haltung
+- **Salzwasserfische** - Meerwasserfische und ihre besonderen Bedürfnisse  
+- **Aquarien-Tipps** - Praktische Tipps für die Aquarienhaltung
 
-1. **Login**: Automatischer Login als Administrator
-2. **Theme Installation**: Installiert das Twenty Twenty-Five Theme aus dem WordPress Repository
-3. **Theme Aktivierung**: Aktiviert das Theme und importiert Starter-Content
-4. **Site-Konfiguration**: Setzt deutsche Einstellungen und Zeitzone
-5. **Demo-Content**: Erstellt einen Willkommens-Beitrag
+### Artikel
+1. **Der faszinierende Clownfisch** - Ein Juwel der Meere (Salzwasserfische)
+2. **Diskusfische** - Die Könige des Süßwasseraquariums (Süßwasserfische)
+3. **Labyrinthfische** - Meister der Luftatmung (Süßwasserfische)
+4. **Das perfekte Aquarium einrichten** - Ein Leitfaden (Aquarien-Tipps)
 
-## ⚙️ Blueprint-Struktur
+### Features
+- **Twenty Twenty-Five Theme** aktiviert und konfiguriert
+- **Custom Navigation** mit Fisch-spezifischen Menüpunkten
+- **Responsive Design** für alle Geräte
+- **SEO-freundliche URLs** und Struktur
+- **Deutsche Lokalisierung** mit Schweizer Datums-/Zeitformat
 
-```json
-{
-  "$schema": "https://playground.wordpress.net/blueprint-schema.json",
-  "landingPage": "/",
-  "preferredVersions": {
-    "php": "8.3",
-    "wp": "latest"
-  },
-  "features": {
-    "networking": true
-  },
-  "steps": [...]
-}
-```
+## Theme-Anpassungen
 
-## 🛠 Anpassungen
+Das Blueprint:
+- Installiert und aktiviert das Twenty Twenty-Five Theme
+- Importiert alle Inhalte über WXR
+- Konfiguriert die Website-Einstellungen (Titel, Beschreibung, etc.)
+- Erstellt ein benutzerdefiniertes Navigationsmenü
+- Setzt WordPress auf Entwicklungsmodus für Debugging
 
-### Eigenes Theme verwenden
+## Technische Details
 
-Wenn Sie Ihr eigenes Theme verwenden möchten, ersetzen Sie den `installTheme`-Step durch einen `writeFiles`-Step:
+- **WordPress Version**: Neueste verfügbare Version
+- **PHP Version**: 8.3
+- **Theme**: Twenty Twenty-Five (Standard WordPress Theme)
+- **Sprache**: Deutsch (Deutschland)
+- **Timezone**: Europe/Zurich
 
-```json
-{
-  "step": "writeFiles",
-  "writeToPath": "/wordpress/wp-content/themes/ihr-theme-name",
-  "filesTree": {
-    "resource": "literal:directory",
-    "name": "ihr-theme-name",
-    "files": {
-      "style.css": "/* Ihr Theme CSS */",
-      "functions.php": "<?php /* Ihr Theme PHP */ ?>",
-      "index.php": "<?php /* Ihr Theme Template */ ?>"
-    }
-  }
-}
-```
+## Lizenz
 
-### Plugins hinzufügen
-
-Fügen Sie diesen Step hinzu, um Plugins zu installieren:
-
-```json
-{
-  "step": "installPlugin",
-  "pluginData": {
-    "resource": "wordpress.org/plugins",
-    "slug": "plugin-slug"
-  },
-  "options": {
-    "activate": true
-  }
-}
-```
-
-### Demo-Content hinzufügen
-
-Verwenden Sie `importWxr` für WordPress-Export-Dateien:
-
-```json
-{
-  "step": "importWxr",
-  "file": {
-    "resource": "url",
-    "url": "https://ihre-domain.com/demo-content.xml"
-  }
-}
-```
-
-## 📚 Weitere Ressourcen
-
-- [WordPress Playground Dokumentation](https://wordpress.github.io/wordpress-playground/)
-- [Blueprint Beispiele](https://wordpress.github.io/wordpress-playground/blueprints/examples)
-- [Alle verfügbaren Steps](https://wordpress.github.io/wordpress-playground/blueprints/steps)
-
-## 🔧 Troubleshooting
-
-### Blueprint funktioniert nicht?
-- Überprüfen Sie die JSON-Syntax mit einem JSON-Validator
-- Stellen Sie sicher, dass alle URLs erreichbar sind
-- Prüfen Sie die Browser-Konsole für Fehlermeldungen
-
-### Theme wird nicht korrekt geladen?
-- Überprüfen Sie die `style.css` Header-Informationen
-- Stellen Sie sicher, dass alle erforderlichen Theme-Dateien vorhanden sind
-- Testen Sie das Blueprint lokal mit einem JSON-Schema-Validator
-
-## 📄 Lizenz
-
-Dieses Blueprint steht unter der gleichen Lizenz wie WordPress (GPL v2 oder höher).
+Dieser Blueprint und die Inhalte stehen unter einer freien Lizenz und können beliebig verwendet und angepasst werden.
