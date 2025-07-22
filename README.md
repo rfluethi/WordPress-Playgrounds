@@ -15,6 +15,7 @@ Welcome to the WordPress Playgrounds repository! This collection of interactive 
   - [Available Examples](#available-examples)
     - [Import Example](#import-example)
     - [Column Example](#column-example)
+    - [Theme Fische Example](#theme-fische-example)
   - [Quick Start](#quick-start)
     - [Option 1: Use Pre-built Examples](#option-1-use-pre-built-examples)
     - [Option 2: Clone and Customize](#option-2-clone-and-customize)
@@ -94,6 +95,27 @@ This example showcases how to create responsive column layouts that maintain con
 
 **Documentation**: [View column-example directory](column-example/)
 
+---
+
+### Theme Fische Example
+
+**Demonstrates**: WordPress theme installation and configuration with starter content  
+**Difficulty**: Beginner  
+**Use Cases**: Theme testing, demonstration, educational purposes  
+
+This example shows how to automatically install and activate a WordPress theme using the WordPress Playground. Demonstrates the Twenty Twenty-Five theme with starter content, perfect for theme testing and educational demonstrations.
+
+**Features**:
+
+- Automatic theme installation from WordPress.org
+- Theme activation with starter content
+- Custom site configuration
+- Professional demo setup
+
+**Try it**: [Launch Theme Example](https://playground.wordpress.net/?mode=seamless&blueprint-url=https://raw.githubusercontent.com/rfluethi/WordPress-Playgrounds/main/theme-fische-example/blueprint.json)
+
+**Documentation**: [View theme-fische-example directory](theme-fische-example/)
+
 ## Quick Start
 
 ### Option 1: Use Pre-built Examples
@@ -131,6 +153,10 @@ WordPress-Playgrounds/
 │   ├── blueprint.json          # Playground configuration
 │   ├── column-example.xml      # Column layout content
 │   ├── column-example.png      # Example screenshot
+│   └── README.md              # Detailed documentation
+├── theme-fische-example/
+│   ├── blueprint.json          # Basic theme setup
+│   ├── blueprint-extended.json # Extended configuration
 │   └── README.md              # Detailed documentation
 └── LICENSE
 ```
