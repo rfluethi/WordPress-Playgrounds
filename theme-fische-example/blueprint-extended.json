@@ -1,0 +1,60 @@
+{
+  "$schema": "https://playground.wordpress.net/blueprint-schema.json",
+  "landingPage": "/wp-admin/site-editor.php",
+  "preferredVersions": {
+    "php": "8.3",
+    "wp": "latest"
+  },
+  "features": {
+    "networking": true
+  },
+  "steps": [
+    {
+      "step": "login",
+      "username": "admin"
+    },
+    {
+      "step": "installTheme",
+      "themeData": {
+        "resource": "wordpress.org/themes",
+        "slug": "twentytwentyfive"
+      },
+      "options": {
+        "activate": true,
+        "importStarterContent": false
+      }
+    },
+    {
+      "step": "setSiteOptions",
+      "options": {
+        "blogname": "Seminar Demo Fische",
+        "blogdescription": "WordPress Playground Demo mit Twenty Twenty-Five",
+        "start_of_week": "1",
+        "timezone_string": "Europe/Zurich",
+        "date_format": "j. F Y",
+        "time_format": "H:i",
+        "show_on_front": "posts"
+      }
+    },
+    {
+      "step": "runPHP",
+      "code": "<?php require_once 'wordpress/wp-load.php'; wp_insert_post(array('post_title' => 'Willkommen bei WordPress Playground', 'post_content' => '<p>Herzlich willkommen zu dieser WordPress Playground Demo!</p><p>Diese Installation läuft vollständig in Ihrem Browser und verwendet das <strong>Twenty Twenty-Five</strong> Theme. Sie können alle Funktionen von WordPress testen, ohne eine lokale Installation oder einen Server zu benötigen.</p><h2>Was können Sie hier testen?</h2><ul><li>Block-Editor (Gutenberg)</li><li>Site-Editor für Full Site Editing</li><li>Theme-Anpassungen</li><li>Plugin-Installation</li><li>Content-Erstellung</li></ul><p>Viel Spaß beim Erkunden!</p>', 'post_status' => 'publish', 'post_type' => 'post', 'meta_input' => array('_thumbnail_id' => 0))); ?>"
+    },
+    {
+      "step": "runPHP",
+      "code": "<?php require_once 'wordpress/wp-load.php'; wp_insert_post(array('post_title' => 'Über diese Demo', 'post_content' => '<p>Diese Demo-Website wurde mit einem <strong>WordPress Playground Blueprint</strong> erstellt.</p><h3>Was ist WordPress Playground?</h3><p>WordPress Playground ist eine innovative Möglichkeit, WordPress direkt im Browser auszuführen, ohne Server-Installation oder Konfiguration.</p><h3>Blueprints</h3><p>Blueprints sind JSON-Dateien, die definieren, wie eine WordPress-Installation konfiguriert werden soll. Sie können verwendet werden, um:</p><ul><li>Themes und Plugins zu installieren</li><li>Demo-Content zu importieren</li><li>Einstellungen zu konfigurieren</li><li>Benutzer anzulegen</li></ul><p>Diese Demo zeigt das Potenzial von WordPress Playground für Theme-Entwicklung und -Tests.</p>', 'post_status' => 'publish', 'post_type' => 'post')); ?>"
+    },
+    {
+      "step": "runPHP",
+      "code": "<?php require_once 'wordpress/wp-load.php'; wp_insert_post(array('post_title' => 'Impressum', 'post_content' => '<h2>Angaben gemäß § 5 TMG</h2><p>Dies ist eine Demo-Website, die mit WordPress Playground erstellt wurde.</p><h2>Kontakt</h2><p>Diese Website dient nur zu Demonstrationszwecken.</p><h2>Haftungsausschluss</h2><p>Diese Demo-Installation enthält nur Beispiel-Inhalte und ist nicht für den produktiven Einsatz bestimmt.</p>', 'post_status' => 'publish', 'post_type' => 'page')); ?>"
+    },
+    {
+      "step": "runPHP",
+      "code": "<?php require_once 'wordpress/wp-load.php'; wp_insert_post(array('post_title' => 'Datenschutz', 'post_content' => '<h2>Datenschutz bei WordPress Playground</h2><p>WordPress Playground läuft vollständig in Ihrem Browser. Alle Daten bleiben lokal und werden nicht an externe Server übertragen.</p><h3>Lokale Ausführung</h3><p>Die gesamte WordPress-Installation läuft in Ihrem Browser über WebAssembly. Keine Daten verlassen Ihren Computer.</p><h3>Temporäre Daten</h3><p>Alle Änderungen und Inhalte sind temporär und gehen verloren, wenn Sie die Seite schließen oder neu laden.</p>', 'post_status' => 'publish', 'post_type' => 'page')); ?>"
+    },
+    {
+      "step": "setSiteLanguage",
+      "language": "de_DE"
+    }
+  ]
+}
