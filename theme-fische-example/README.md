@@ -9,25 +9,41 @@ Dieses Verzeichnis enthält einen WordPress Playground Blueprint mit einem kompl
 
 ## Verwendung
 
-### Direkter Link zu WordPress Playground
+### DEBUGGING - Test Links (von einfach zu komplex)
 
-**Vollständige Version (mit allen Inhalten):**
-
-```url
-https://playground.wordpress.net/?blueprint=https://raw.githubusercontent.com/rfluethi/WordPress-Playgrounds/main/theme-fische-example/blueprint.json
-```
-
-**Vereinfachte Version (zum Testen):**
+**Test 1 - Ultra-minimal (nur Titel setzen):**
 
 ```url
-https://playground.wordpress.net/?blueprint=https://raw.githubusercontent.com/rfluethi/WordPress-Playgrounds/main/theme-fische-example/blueprint-simple.json
+https://playground.wordpress.net/?blueprint=https://raw.githubusercontent.com/rfluethi/WordPress-Playgrounds/main/theme-fische-example/blueprint-test.json
 ```
 
-**Minimale Version (nur Theme, falls Probleme auftreten):**
+**Test 2 - Einfacher PHP-Code:**
 
 ```url
-https://playground.wordpress.net/?blueprint=https://raw.githubusercontent.com/rfluethi/WordPress-Playgrounds/main/theme-fische-example/blueprint-minimal.json
+https://playground.wordpress.net/?blueprint=https://raw.githubusercontent.com/rfluethi/WordPress-Playgrounds/main/theme-fische-example/blueprint-simple-working.json
 ```
+
+**Test 3 - Nur PHP ohne Theme-Installation:**
+
+```url
+https://playground.wordpress.net/?blueprint=https://raw.githubusercontent.com/rfluethi/WordPress-Playgrounds/main/theme-fische-example/blueprint-working.json
+```
+
+**Test 4 - Alternative ohne Schema:**
+
+```url
+https://playground.wordpress.net/?blueprint-url=https://raw.githubusercontent.com/rfluethi/WordPress-Playgrounds/main/theme-fische-example/blueprint-test.json
+```
+
+### NOTFALL-TEST - Direkte URL ohne Blueprint:
+
+Falls alle oben nicht funktionieren, versuchen Sie:
+
+```url
+https://playground.wordpress.net/
+```
+
+Wenn diese leere Version funktioniert, dann ist das Problem definitiv mit unseren Blueprints.
 
 ### Problembehandlung
 

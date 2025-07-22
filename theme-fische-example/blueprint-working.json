@@ -1,0 +1,9 @@
+{
+  "$schema": "https://playground.wordpress.net/blueprint-schema.json",
+  "steps": [
+    {
+      "step": "runPHP",
+      "code": "<?php\n// Setze grundlegende WordPress-Optionen\nupdate_option('blogname', 'Fische & Aquarien Demo');\nupdate_option('blogdescription', 'Ein WordPress Playground Demo');\n\n// Erstelle einfache Kategorien\nwp_create_category('Süßwasserfische');\nwp_create_category('Salzwasserfische');\nwp_create_category('Aquarien-Tipps');\n\n// Erstelle einen einfachen Beitrag\n$post_data = array(\n    'post_title' => 'Willkommen zur Fische-Demo',\n    'post_content' => 'Dies ist eine WordPress Playground Demo über Fische und Aquarien. Das Twenty Twenty-Five Theme wurde automatisch geladen.',\n    'post_status' => 'publish',\n    'post_type' => 'post'\n);\nwp_insert_post($post_data);\n\necho 'WordPress Fische-Demo erfolgreich eingerichtet!';\n?>"
+    }
+  ]
+}

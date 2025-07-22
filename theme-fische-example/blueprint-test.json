@@ -1,0 +1,11 @@
+{
+  "$schema": "https://playground.wordpress.net/blueprint-schema.json",
+  "steps": [
+    {
+      "step": "setSiteOptions",
+      "options": {
+        "blogname": "Fische Test"
+      }
+    }
+  ]
+}

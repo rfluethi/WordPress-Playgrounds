@@ -1,0 +1,24 @@
+{
+  "preferredVersions": {
+    "wp": "6.4",
+    "php": "8.0"
+  },
+  "steps": [
+    {
+      "step": "login",
+      "username": "admin",
+      "password": "password"
+    },
+    {
+      "step": "setSiteOptions",
+      "options": {
+        "blogname": "Fische & Aquarien",
+        "blogdescription": "WordPress Playground Demo"
+      }
+    },
+    {
+      "step": "runPHP",
+      "code": "<?php\necho 'WordPress läuft!';\nwp_create_category('Fische');\n$post_id = wp_insert_post(array(\n    'post_title' => 'Erste Demo',\n    'post_content' => 'Das ist ein Test-Beitrag.',\n    'post_status' => 'publish'\n));\necho 'Beitrag erstellt: ' . $post_id;\n?>"
+    }
+  ]
+}
