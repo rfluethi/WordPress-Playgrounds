@@ -39,20 +39,6 @@
         "page_on_front": 2,
         "posts_per_page": 6
       }
-    },
-    {
-      "step": "defineWpConfigConsts",
-      "consts": {
-        "WP_DEBUG": true,
-        "WP_DEBUG_LOG": true,
-        "WP_DEBUG_DISPLAY": false,
-        "SCRIPT_DEBUG": true,
-        "WP_ENVIRONMENT_TYPE": "development"
-      }
-    },
-    {
-      "step": "runPHP",
-      "code": "<?php\n// Aktiviere das blaue Fische-Design\nset_theme_mod('background_color', '0073aa');\nset_theme_mod('header_textcolor', 'ffffff');\n\n// Vereinfachtes Custom CSS für Unterwasser-Look\n$custom_css = 'body { background: linear-gradient(135deg, #0073aa 0%, #005577 50%, #003344 100%); background-attachment: fixed; } .site-header { background: rgba(0, 115, 170, 0.9); } .site-title { color: white !important; font-size: 2.5rem; font-weight: bold; text-transform: uppercase; } .main-navigation a { color: white !important; text-transform: uppercase; } .entry-content { background: rgba(255, 255, 255, 0.95); padding: 2rem; border-radius: 15px; margin: 1rem 0; } h1, h2, h3 { color: #0073aa; text-align: center; }';\n\nwp_update_custom_css_post($custom_css);\n\necho 'Fische-Design aktiviert!';\n?>"
     }
   ]
 }
