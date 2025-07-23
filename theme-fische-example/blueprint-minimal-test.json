@@ -1,0 +1,17 @@
+{
+  "landingPage": "/wp-admin/",
+  "$schema": "https://playground.wordpress.net/blueprint-schema.json",
+  "preferredVersions": {
+    "php": "8.0",
+    "wp": "6.4"
+  },
+  "steps": [
+    {
+      "step": "setSiteOptions",
+      "options": {
+        "blogname": "FISCHE Test",
+        "users_can_register": false
+      }
+    }
+  ]
+}
