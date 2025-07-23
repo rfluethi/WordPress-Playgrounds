@@ -1,0 +1,53 @@
+{
+  "$schema": "https://playground.wordpress.net/blueprint-schema.json",
+  "preferredVersions": {
+    "php": "8.3",
+    "wp": "latest"
+  },
+  "features": {
+    "networking": true
+  },
+  "steps": [
+    {
+      "step": "installTheme",
+      "themeData": {
+        "resource": "url",
+        "url": "https://raw.githubusercontent.com/rfluethi/WordPress-Playgrounds/main/theme-fische-example/twentytwentyfive.zip"
+      },
+      "options": {
+        "activate": true
+      }
+    },
+    {
+      "step": "setSiteOptions", 
+      "options": {
+        "blogname": "🐠 FISCHE - Naturwunder unter Wasser",
+        "blogdescription": "Entdecke die faszinierende Welt der Aquaristik"
+      }
+    },
+    {
+      "step": "writeFile",
+      "path": "/wordpress/wp-content/uploads/2025/07/fish-placeholder.svg",
+      "data": "<svg xmlns='http://www.w3.org/2000/svg' width='400' height='300' viewBox='0 0 400 300'><defs><linearGradient id='ocean' x1='0%' y1='0%' x2='0%' y2='100%'><stop offset='0%' style='stop-color:#87CEEB'/><stop offset='100%' style='stop-color:#4682B4'/></linearGradient></defs><rect width='400' height='300' fill='url(#ocean)'/><g transform='translate(200,150)'><ellipse cx='0' cy='0' rx='80' ry='40' fill='#FF6347' stroke='#FF4500' stroke-width='2'/><ellipse cx='-50' cy='0' rx='15' ry='25' fill='#FF6347'/><ellipse cx='50' cy='-10' rx='20' ry='15' fill='#FF6347'/><ellipse cx='50' cy='10' rx='20' ry='15' fill='#FF6347'/><circle cx='-20' cy='-10' r='8' fill='white'/><circle cx='-20' cy='-10' r='4' fill='black'/><path d='M 60,0 L 100,-20 L 100,20 Z' fill='#FF6347'/><text x='0' y='80' text-anchor='middle' fill='white' font-family='Arial' font-size='16'>🐠 Fisch-Bild</text></g></svg>"
+    },
+    {
+      "step": "writeFile",
+      "path": "/wordpress/wp-content/uploads/2025/07/clownfish.svg", 
+      "data": "<svg xmlns='http://www.w3.org/2000/svg' width='400' height='300' viewBox='0 0 400 300'><defs><linearGradient id='water' x1='0%' y1='0%' x2='0%' y2='100%'><stop offset='0%' style='stop-color:#87CEEB'/><stop offset='100%' style='stop-color:#1E90FF'/></linearGradient></defs><rect width='400' height='300' fill='url(#water)'/><g transform='translate(200,150)'><ellipse cx='0' cy='0' rx='70' ry='35' fill='#FF6347'/><rect x='-60' y='-25' width='15' height='50' fill='white'/><rect x='-20' y='-25' width='15' height='50' fill='white'/><rect x='20' y='-25' width='15' height='50' fill='white'/><circle cx='-25' cy='-8' r='6' fill='black'/><path d='M 50,0 L 85,-15 L 85,15 Z' fill='#FF6347'/><text x='0' y='70' text-anchor='middle' fill='white' font-family='Arial' font-size='14'>🐠 Clownfisch</text></g></svg>"
+    },
+    {
+      "step": "writeFile",
+      "path": "/wordpress/wp-content/uploads/2025/07/discus.svg",
+      "data": "<svg xmlns='http://www.w3.org/2000/svg' width='400' height='300' viewBox='0 0 400 300'><defs><linearGradient id='aqua' x1='0%' y1='0%' x2='0%' y2='100%'><stop offset='0%' style='stop-color:#20B2AA'/><stop offset='100%' style='stop-color:#008B8B'/></linearGradient></defs><rect width='400' height='300' fill='url(#aqua)'/><g transform='translate(200,150)'><ellipse cx='0' cy='0' rx='60' ry='80' fill='#4169E1'/><path d='M -40,-60 Q -80,-80 -40,-40' stroke='#4169E1' stroke-width='8' fill='none'/><path d='M -40,60 Q -80,80 -40,40' stroke='#4169E1' stroke-width='8' fill='none'/><path d='M 40,-60 Q 80,-80 40,-40' stroke='#4169E1' stroke-width='8' fill='none'/><path d='M 40,60 Q 80,80 40,40' stroke='#4169E1' stroke-width='8' fill='none'/><circle cx='-15' cy='-20' r='8' fill='yellow'/><circle cx='-15' cy='-20' r='3' fill='black'/><text x='0' y='120' text-anchor='middle' fill='white' font-family='Arial' font-size='14'>👑 Diskusfisch</text></g></svg>"
+    },
+    {
+      "step": "writeFile",
+      "path": "/wordpress/wp-content/uploads/2025/07/betta.svg",
+      "data": "<svg xmlns='http://www.w3.org/2000/svg' width='400' height='300' viewBox='0 0 400 300'><defs><linearGradient id='deep' x1='0%' y1='0%' x2='0%' y2='100%'><stop offset='0%' style='stop-color:#191970'/><stop offset='100%' style='stop-color:#000080'/></linearGradient></defs><rect width='400' height='300' fill='url(#deep)'/><g transform='translate(200,150)'><ellipse cx='0' cy='0' rx='50' ry='25' fill='#8A2BE2'/><path d='M -35,-15 Q -70,-40 -35,-5' stroke='#8A2BE2' stroke-width='6' fill='#9370DB'/><path d='M -35,15 Q -70,40 -35,5' stroke='#8A2BE2' stroke-width='6' fill='#9370DB'/><path d='M 35,-15 Q 70,-35 35,-5' stroke='#8A2BE2' stroke-width='6' fill='#9370DB'/><path d='M 35,15 Q 70,35 35,5' stroke='#8A2BE2' stroke-width='6' fill='#9370DB'/><path d='M 40,0 L 70,-10 L 70,10 Z' fill='#8A2BE2'/><circle cx='-15' cy='-5' r='5' fill='red'/><text x='0' y='80' text-anchor='middle' fill='white' font-family='Arial' font-size='14'>🥊 Kampffisch</text></g></svg>"
+    },
+    {
+      "step": "runPHP",
+      "code": "<?php require_once 'wordpress/wp-load.php'; wp_set_current_user(1); $upload_dir = wp_upload_dir(); $fish_images = ['clownfish.svg', 'discus.svg', 'betta.svg', 'fish-placeholder.svg']; foreach($fish_images as $img) { $file_path = $upload_dir['basedir'] . '/2025/07/' . $img; $file_url = $upload_dir['baseurl'] . '/2025/07/' . $img; if(file_exists($file_path)) { $attachment = array('guid' => $file_url, 'post_mime_type' => 'image/svg+xml', 'post_title' => pathinfo($img, PATHINFO_FILENAME), 'post_content' => '', 'post_status' => 'inherit'); $attach_id = wp_insert_attachment($attachment, $file_path); require_once(ABSPATH . 'wp-admin/includes/image.php'); $attach_data = wp_generate_attachment_metadata($attach_id, $file_path); wp_update_attachment_metadata($attach_id, $attach_data); } } $posts = [ ['title' => 'Clownfisch - Der bunte Held der Korallenriffe', 'content' => '<div style=\"background: linear-gradient(135deg, #e6f3ff 0%, #cce7ff 100%); padding: 20px; border-radius: 10px; margin: 20px 0;\"><img src=\"' . $upload_dir['baseurl'] . '/2025/07/clownfish.svg\" alt=\"Clownfisch\" style=\"width: 100%; max-width: 400px; height: auto; border-radius: 8px;\"/><h1 style=\"color: #0073aa;\">🐠 Der faszinierende Clownfisch</h1><p>Der Clownfisch ist einer der bekanntesten Meeresfische. Mit seiner leuchtend orangen Farbe und den charakteristischen weißen Streifen ist er ein echter Hingucker!</p><h2 style=\"color: #005177;\">🌊 Besondere Eigenschaften</h2><ul><li>⭐ Symbiotische Beziehung mit Seeanemonen</li><li>🎨 Farbwechsel je nach Stimmung</li><li>👥 Sehr soziale Tiere</li><li>💪 Einfach zu pflegen</li></ul></div>'], ['title' => 'Diskusfische - Die Könige des Süßwasseraquariums', 'content' => '<div style=\"background: linear-gradient(135deg, #e6f3ff 0%, #cce7ff 100%); padding: 20px; border-radius: 10px; margin: 20px 0;\"><img src=\"' . $upload_dir['baseurl'] . '/2025/07/discus.svg\" alt=\"Diskusfisch\" style=\"width: 100%; max-width: 400px; height: auto; border-radius: 8px;\"/><h1 style=\"color: #0073aa;\">👑 Diskusfische - Die Könige</h1><p>Diskusfische werden als die \"Könige des Süßwasseraquariums\" bezeichnet. Ihre majestätische Erscheinung macht sie zu einem Highlight!</p><h2 style=\"color: #005177;\">🏠 Pflege und Haltung</h2><ul><li>💧 Benötigen weiches, saures Wasser</li><li>🌡️ Temperatur zwischen 26-30°C</li><li>🔄 Regelmäßige Wasserwechsel</li><li>🐟 Schwarmfische - mindestens 5 Tiere</li></ul></div>'], ['title' => 'Siamesischer Kampffisch - Eleganz in Bewegung', 'content' => '<div style=\"background: linear-gradient(135deg, #e6f3ff 0%, #cce7ff 100%); padding: 20px; border-radius: 10px; margin: 20px 0;\"><img src=\"' . $upload_dir['baseurl'] . '/2025/07/betta.svg\" alt=\"Kampffisch\" style=\"width: 100%; max-width: 400px; height: auto; border-radius: 8px;\"/><h1 style=\"color: #0073aa;\">🥊 Siamesischer Kampffisch</h1><p>Der Kampffisch besticht durch elegante Flossen und prächtige Farben. Diese Labyrinthfische sind bei Aquarianern sehr beliebt.</p><h2 style=\"color: #005177;\">📋 Haltungshinweise</h2><ul><li>👤 Einzelhaltung von Männchen</li><li>🌡️ Wassertemperatur 24-26°C</li><li>🌊 Schwache Strömung bevorzugt</li><li>🏠 Versteckmöglichkeiten wichtig</li></ul></div>'] ]; foreach($posts as $post_data) { wp_insert_post(array('post_title' => $post_data['title'], 'post_content' => $post_data['content'], 'post_status' => 'publish', 'post_type' => 'post')); } $homepage = wp_insert_post(array('post_title' => 'Willkommen in der Unterwasserwelt', 'post_content' => '<div style=\"background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 50%, #06b6d4 100%); color: white; padding: 40px; border-radius: 15px; text-align: center; margin: 20px 0;\"><img src=\"' . $upload_dir['baseurl'] . '/2025/07/fish-placeholder.svg\" alt=\"Aquarium\" style=\"width: 100%; max-width: 400px; height: auto; border-radius: 10px; margin-bottom: 20px;\"/><h1 style=\"font-size: 3em; margin-bottom: 20px;\">🐠 Unterwasserwelt</h1><p style=\"font-size: 1.3em;\">Entdecke die faszinierende Welt der Aquaristik!</p></div><div style=\"display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; margin: 30px 0;\"><div style=\"background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%); padding: 25px; border: 3px solid #0369a1; border-radius: 12px; text-align: center; box-shadow: 0 4px 6px rgba(0,0,0,0.1);\"><h3 style=\"color: #0c4a6e; font-size: 1.5em;\">🐠 Clownfische</h3><p>Die bunten Stars der Salzwasseraquaristik</p></div><div style=\"background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%); padding: 25px; border: 3px solid #0369a1; border-radius: 12px; text-align: center; box-shadow: 0 4px 6px rgba(0,0,0,0.1);\"><h3 style=\"color: #0c4a6e; font-size: 1.5em;\">👑 Diskusfische</h3><p>Majestätische Könige des Süßwassers</p></div><div style=\"background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%); padding: 25px; border: 3px solid #0369a1; border-radius: 12px; text-align: center; box-shadow: 0 4px 6px rgba(0,0,0,0.1);\"><h3 style=\"color: #0c4a6e; font-size: 1.5em;\">🥊 Kampffische</h3><p>Elegante Einzelgänger mit prächtigen Flossen</p></div></div><div style=\"background: #f8fafc; padding: 30px; border-radius: 10px; margin: 30px 0; text-all: center;\"><h2 style=\"color: #1e40af;\">🌊 Perfekt für jeden Aquarianer!</h2><p style=\"font-size: 1.1em;\">Ob Anfänger oder Experte - hier findest du wertvolle Tipps für dein perfektes Aquarium!</p></div>', 'post_status' => 'publish', 'post_type' => 'page')); update_option('page_on_front', $homepage); update_option('show_on_front', 'page'); echo 'LocalWP-Theme mit SVG-Bildern installiert! '; echo count($posts) . ' Posts + Homepage erstellt. Mediathek: ' . count($fish_images) . ' Bilder hinzugefügt.'; ?>"
+    }
+  ]
+}
