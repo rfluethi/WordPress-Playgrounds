@@ -12,7 +12,7 @@
       "step": "setSiteOptions",
       "options": {
         "blogname": "FISH with Media Library",
-        "blogdescription": "Images loaded into WordPress media library"
+        "blogdescription": "Images loaded into WordPress media library - Absolute Paths Fixed"
       }
     },
     {
