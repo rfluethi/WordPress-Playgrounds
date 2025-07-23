@@ -1,0 +1,53 @@
+{
+  "$schema": "https://playground.wordpress.net/blueprint-schema.json",
+  "preferredVersions": {
+    "php": "8.3",
+    "wp": "latest"
+  },
+  "features": {
+    "networking": true
+  },
+  "siteOptions": {
+    "blogname": "FISCHE - Naturwunder unter Wasser",
+    "blogdescription": "Entdecke die faszinierende Welt der Aquaristik"
+  },
+  "steps": [
+    {
+      "step": "installTheme",
+      "themeData": {
+        "resource": "url", 
+        "url": "https://raw.githubusercontent.com/rfluethi/WordPress-Playgrounds/main/theme-fische-example/fish-fixed.zip"
+      }
+    },
+    {
+      "step": "activateTheme",
+      "themeFolderName": "fish"
+    },
+    {
+      "step": "runPHP",
+      "code": "<?php require_once '/wordpress/wp-load.php'; wp_set_current_user(1); wp_create_category('Buntbarsche'); wp_create_category('Labyrinthfische'); wp_create_category('Meeresfische'); echo 'Categories created'; ?>"
+    },
+    {
+      "step": "runPHP",
+      "code": "<?php require_once '/wordpress/wp-load.php'; wp_set_current_user(1); $github_base = 'https://raw.githubusercontent.com/rfluethi/WordPress-Playgrounds/main/theme-fische-example/images/'; $homepage_content = '<div style=\"background-image: url(' . $github_base . 'Wallpaper-with-a-sea-reef.webp); background-size: cover; background-position: center; background-attachment: fixed; min-height: 70vh; display: flex; align-items: center; justify-content: center; color: white; text-align: center;\"><div style=\"background: rgba(0,0,0,0.3); padding: 40px; border-radius: 10px;\"><img src=\"' . $github_base . 'cropped-Fisch-Titelseite.webp\" style=\"width: 300px; margin-bottom: 20px;\"><h1 style=\"font-size: 3em; margin: 0; text-shadow: 2px 2px 4px rgba(0,0,0,0.5);\">Naturwunder unter Wasser</h1></div></div><div style=\"padding: 60px 20px; text-align: center; background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%); color: white;\"><h2 style=\"font-size: 2.5em; margin-bottom: 40px;\">Entdecke sie mit mir ...</h2><div style=\"display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; max-width: 1200px; margin: 0 auto;\"></div></div>'; wp_insert_post(array('post_title' => 'Startseite', 'post_content' => $homepage_content, 'post_status' => 'publish', 'post_type' => 'page')); echo 'Homepage created'; ?>"
+    },
+    {
+      "step": "runPHP",
+      "code": "<?php require_once '/wordpress/wp-load.php'; wp_set_current_user(1); $github_base = 'https://raw.githubusercontent.com/rfluethi/WordPress-Playgrounds/main/theme-fische-example/images/'; $content = '<div style=\"text-align: center; padding: 20px;\"><img src=\"' . $github_base . 'Clownfisch.webp\" style=\"width: 100%; max-width: 500px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.3);\"><h2 style=\"color: #2a5298; margin: 30px 0 20px;\">Clownfisch</h2><p style=\"font-size: 1.1em; line-height: 1.6; color: #333; max-width: 600px; margin: 0 auto;\">Der Echte Clownfisch wird sechs bis elf Zentimeter groß. Das Tier hat drei charakteristische weiße Querstreifen, die von schwarzen Rändern umgeben sind.</p></div>'; $post_id = wp_insert_post(array('post_title' => 'Clownfisch', 'post_content' => $content, 'post_status' => 'publish')); $cat = get_term_by('name', 'Meeresfische', 'category'); if($cat) wp_set_post_categories($post_id, array($cat->term_id)); echo 'Clownfisch created'; ?>"
+    },
+    {
+      "step": "runPHP",
+      "code": "<?php require_once '/wordpress/wp-load.php'; wp_set_current_user(1); $github_base = 'https://raw.githubusercontent.com/rfluethi/WordPress-Playgrounds/main/theme-fische-example/images/'; $content = '<div style=\"text-align: center; padding: 20px;\"><img src=\"' . $github_base . 'Diskusfische.webp\" style=\"width: 100%; max-width: 500px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.3);\"><h2 style=\"color: #2a5298; margin: 30px 0 20px;\">Diskusfische</h2><p style=\"font-size: 1.1em; line-height: 1.6; color: #333; max-width: 600px; margin: 0 auto;\">Diskusfische unterscheiden sich durch ihren stark zusammengedrückten und hochrückigen Körperbau. Sie werden als die Könige des Süßwasseraquariums bezeichnet.</p></div>'; $post_id = wp_insert_post(array('post_title' => 'Diskusfische', 'post_content' => $content, 'post_status' => 'publish')); $cat = get_term_by('name', 'Buntbarsche', 'category'); if($cat) wp_set_post_categories($post_id, array($cat->term_id)); echo 'Diskusfische created'; ?>"
+    },
+    {
+      "step": "runPHP", 
+      "code": "<?php require_once '/wordpress/wp-load.php'; wp_set_current_user(1); $github_base = 'https://raw.githubusercontent.com/rfluethi/WordPress-Playgrounds/main/theme-fische-example/images/'; $content = '<div style=\"text-align: center; padding: 20px;\"><img src=\"' . $github_base . 'Siamesischer-Kampffisch.webp\" style=\"width: 100%; max-width: 500px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.3);\"><h2 style=\"color: #2a5298; margin: 30px 0 20px;\">Siamesischer Kampffisch</h2><p style=\"font-size: 1.1em; line-height: 1.6; color: #333; max-width: 600px; margin: 0 auto;\">Der Siamesische Kampffisch besticht durch elegante Flossen und prächtige Farben. Er gehört zu den Labyrinthfischen und kann atmosphärischen Sauerstoff atmen.</p></div>'; $post_id = wp_insert_post(array('post_title' => 'Siamesischer Kampffisch', 'post_content' => $content, 'post_status' => 'publish')); $cat = get_term_by('name', 'Labyrinthfische', 'category'); if($cat) wp_set_post_categories($post_id, array($cat->term_id)); echo 'Kampffisch created'; ?>"
+    },
+    {
+      "step": "runPHP",
+      "code": "<?php require_once '/wordpress/wp-load.php'; wp_set_current_user(1); $homepage = get_page_by_title('Startseite'); if($homepage) { update_option('page_on_front', $homepage->ID); update_option('show_on_front', 'page'); } delete_post(1); flush_rewrite_rules(); echo 'Setup complete - theme and images working!'; ?>"
+    }
+  ],
+  "login": true,
+  "landingPage": "/"
+}

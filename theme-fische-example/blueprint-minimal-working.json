@@ -1,0 +1,42 @@
+{
+  "$schema": "https://playground.wordpress.net/blueprint-schema.json",
+  "preferredVersions": {
+    "php": "8.3",
+    "wp": "latest"
+  },
+  "features": {
+    "networking": true
+  },
+  "siteOptions": {
+    "blogname": "FISCHE - Naturwunder unter Wasser",
+    "blogdescription": "Entdecke die faszinierende Welt der Aquaristik"
+  },
+  "steps": [
+    {
+      "step": "runPHP",
+      "code": "<?php require_once '/wordpress/wp-load.php'; wp_set_current_user(1); wp_create_category('Buntbarsche'); wp_create_category('Labyrinthfische'); wp_create_category('Meeresfische'); echo 'Categories created'; ?>"
+    },
+    {
+      "step": "runPHP",
+      "code": "<?php require_once '/wordpress/wp-load.php'; wp_set_current_user(1); $github_base = 'https://raw.githubusercontent.com/rfluethi/WordPress-Playgrounds/main/theme-fische-example/images/'; $homepage_content = '<div style=\"background-image: url(' . $github_base . 'Wallpaper-with-a-sea-reef.webp); background-size: cover; background-position: center; min-height: 400px; display: flex; align-items: center; justify-content: center; color: white; text-align: center;\"><div><img src=\"' . $github_base . 'cropped-Fisch-Titelseite.webp\" style=\"width: 300px; margin-bottom: 20px;\"><h1 style=\"font-size: 3em; margin: 0;\">Naturwunder unter Wasser</h1></div></div><div style=\"padding: 40px; text-align: center;\"><h2 style=\"font-size: 2.5em;\">Entdecke sie mit mir ...</h2></div>'; wp_insert_post(array('post_title' => 'Startseite', 'post_content' => $homepage_content, 'post_status' => 'publish', 'post_type' => 'page')); echo 'Homepage created'; ?>"
+    },
+    {
+      "step": "runPHP",
+      "code": "<?php require_once '/wordpress/wp-load.php'; wp_set_current_user(1); $github_base = 'https://raw.githubusercontent.com/rfluethi/WordPress-Playgrounds/main/theme-fische-example/images/'; $content = '<div style=\"text-align: center;\"><img src=\"' . $github_base . 'Clownfisch.webp\" style=\"width: 100%; max-width: 500px;\"><h2>Clownfisch</h2><p>Der Echte Clownfisch wird sechs bis elf Zentimeter groß. Das Tier hat drei weiße Querstreifen.</p></div>'; $post_id = wp_insert_post(array('post_title' => 'Clownfisch', 'post_content' => $content, 'post_status' => 'publish')); $cat = get_term_by('name', 'Meeresfische', 'category'); if($cat) wp_set_post_categories($post_id, array($cat->term_id)); echo 'Clownfisch created'; ?>"
+    },
+    {
+      "step": "runPHP",
+      "code": "<?php require_once '/wordpress/wp-load.php'; wp_set_current_user(1); $github_base = 'https://raw.githubusercontent.com/rfluethi/WordPress-Playgrounds/main/theme-fische-example/images/'; $content = '<div style=\"text-align: center;\"><img src=\"' . $github_base . 'Diskusfische.webp\" style=\"width: 100%; max-width: 500px;\"><h2>Diskusfische</h2><p>Diskusfische unterscheiden sich durch ihren zusammengedrückten und hochrückigen Körperbau.</p></div>'; $post_id = wp_insert_post(array('post_title' => 'Diskusfische', 'post_content' => $content, 'post_status' => 'publish')); $cat = get_term_by('name', 'Buntbarsche', 'category'); if($cat) wp_set_post_categories($post_id, array($cat->term_id)); echo 'Diskusfische created'; ?>"
+    },
+    {
+      "step": "runPHP", 
+      "code": "<?php require_once '/wordpress/wp-load.php'; wp_set_current_user(1); $github_base = 'https://raw.githubusercontent.com/rfluethi/WordPress-Playgrounds/main/theme-fische-example/images/'; $content = '<div style=\"text-align: center;\"><img src=\"' . $github_base . 'Siamesischer-Kampffisch.webp\" style=\"width: 100%; max-width: 500px;\"><h2>Siamesischer Kampffisch</h2><p>Der Siamesische Kampffisch besticht durch elegante Flossen und prächtige Farben.</p></div>'; $post_id = wp_insert_post(array('post_title' => 'Siamesischer Kampffisch', 'post_content' => $content, 'post_status' => 'publish')); $cat = get_term_by('name', 'Labyrinthfische', 'category'); if($cat) wp_set_post_categories($post_id, array($cat->term_id)); echo 'Kampffisch created'; ?>"
+    },
+    {
+      "step": "runPHP",
+      "code": "<?php require_once '/wordpress/wp-load.php'; wp_set_current_user(1); $homepage = get_page_by_title('Startseite'); if($homepage) { update_option('page_on_front', $homepage->ID); update_option('show_on_front', 'page'); } delete_post(1); flush_rewrite_rules(); echo 'Setup complete'; ?>"
+    }
+  ],
+  "login": true,
+  "landingPage": "/"
+}
