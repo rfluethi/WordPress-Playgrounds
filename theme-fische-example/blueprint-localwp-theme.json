@@ -1,0 +1,48 @@
+{
+  "$schema": "https://playground.wordpress.net/blueprint-schema.json",
+  "preferredVersions": {
+    "php": "8.3",
+    "wp": "latest"
+  },
+  "features": {
+    "networking": true
+  },
+  "steps": [
+    {
+      "step": "installTheme",
+      "themeData": {
+        "resource": "url",
+        "url": "https://raw.githubusercontent.com/rfluethi/WordPress-Playgrounds/main/theme-fische-example/twentytwentyfive-fische.zip"
+      }
+    },
+    {
+      "step": "activateTheme",
+      "themeFolderName": "twentytwentyfive-custom"
+    },
+    {
+      "step": "importWxr",
+      "file": {
+        "resource": "url",
+        "url": "https://raw.githubusercontent.com/rfluethi/WordPress-Playgrounds/main/theme-fische-example/demo-content-complete.xml"
+      }
+    },
+    {
+      "step": "setSiteOptions",
+      "options": {
+        "blogname": "FISCHE",
+        "blogdescription": "Naturwunder unter Wasser",
+        "start_of_week": "1",
+        "timezone_string": "Europe/Zurich",
+        "date_format": "j. F Y",
+        "time_format": "H:i",
+        "show_on_front": "page",
+        "page_on_front": 2,
+        "posts_per_page": 6
+      }
+    },
+    {
+      "step": "runPHP",
+      "code": "<?php\n// Aktiviere das blaue Fische-Design\nset_theme_mod('background_color', '0073aa');\nset_theme_mod('header_textcolor', 'ffffff');\n\n// Setze Custom CSS für Unterwasser-Look\n$custom_css = '\nbody {\n    background: linear-gradient(135deg, #0073aa 0%, #005577 50%, #003344 100%);\n    background-attachment: fixed;\n}\n\n.site-header {\n    background: rgba(0, 115, 170, 0.9);\n    backdrop-filter: blur(10px);\n}\n\n.site-title {\n    color: white !important;\n    font-size: 2.5rem;\n    font-weight: bold;\n    text-transform: uppercase;\n    letter-spacing: 2px;\n}\n\n.main-navigation a {\n    color: white !important;\n    text-transform: uppercase;\n    font-weight: 500;\n}\n\n.entry-content {\n    background: rgba(255, 255, 255, 0.95);\n    padding: 2rem;\n    border-radius: 15px;\n    margin: 1rem 0;\n    box-shadow: 0 8px 32px rgba(0, 115, 170, 0.2);\n}\n\nh1, h2, h3 {\n    color: #0073aa;\n    text-align: center;\n}\n\n.hero-section {\n    background: linear-gradient(rgba(0, 115, 170, 0.7), rgba(0, 115, 170, 0.7)), url(\"data:image/svg+xml,%3Csvg xmlns=\\'http://www.w3.org/2000/svg\\' viewBox=\\'0 0 1000 600\\'%3E%3Cpath fill=\\'%23ffffff20\\' d=\\'M0,300 Q250,200 500,300 T1000,300 V600 H0 Z\\'/%3E%3C/svg%3E\");\n    color: white;\n    text-align: center;\n    padding: 4rem 2rem;\n    margin-bottom: 2rem;\n}\n';\n\nwp_update_custom_css_post($custom_css);\n\necho 'Fische-Design aktiviert!';\n?>"
+    }
+  ]
+}
