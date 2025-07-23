@@ -1,32 +1,31 @@
-# FISCHE - WordPress Playground Example
+# FISH - WordPress Playground Example
 
-Eine einfache WordPress Playground Demo mit Fischbildern.
+A simple WordPress Playground demo with fish images.
 
-## Verwendung
+## Usage
 
 ```
 https://playground.wordpress.net/?blueprint-url=https://raw.githubusercontent.com/rfluethi/WordPress-Playgrounds/main/theme-fische-example/blueprint.json
 ```
 
-## Inhalt
+## Contents
 
-- **blueprint.json**: Hauptkonfigurationsdatei für WordPress Playground
-- **blueprint-clean.json**: Backup der funktionierenden Version
-- **images/**: Verzeichnis mit WebP-Bildern der Fische
-- **README.md**: Diese Datei
+- **blueprint.json**: Main configuration file for WordPress Playground
+- **images/**: Directory with WebP images of fish
+- **README.md**: This file
 
 ## Features
 
-- ✅ GitHub-gehostete WebP-Bilder
-- ✅ Drei Fisch-Posts (Clownfisch, Diskusfische, Siamesischer Kampffisch)
-- ✅ Emoji-freie, saubere Darstellung
-- ✅ Responsive Bilder mit maximaler Breite
+- GitHub-hosted WebP images
+- Three fish posts (Clownfish, Discus fish, Siamese fighting fish)
+- Emoji-free, clean presentation
+- Responsive images with maximum width
 
-## Bilder
+## Images
 
-Die folgenden Fischbilder sind verfügbar:
+The following fish images are available:
 - Clownfisch.webp
 - Diskusfische.webp  
 - Siamesischer-Kampffisch.webp
 
-Alle Bilder werden direkt von GitHub Raw geladen.
+All images are loaded directly from GitHub Raw.
