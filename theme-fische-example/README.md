@@ -1,57 +1,57 @@
 # WordPress Playground Blueprint - FISCHE Theme
 
-Dieses Verzeichnis enthält WordPress Playground Blueprints für die "FISCHE - Naturwunder unter Wasser" Website mit einem angepassten Twenty Twenty-Five Child Theme.
+This directory contains WordPress Playground blueprints for the "FISCHE - Naturwunder unter Wasser" (FISH - Natural Wonders Under Water) website with a customized Twenty Twenty-Five child theme.
 
-## 📁 Dateien
+## Files
 
 ### Blueprints
 
-- **`blueprint.json`** - Basis Blueprint mit Theme und Inline-CSS Content
-- **`blueprint-complete.json`** - Vollständiges Blueprint mit WXR-Import und PHP URL-Ersetzung
+- **`blueprint.json`** - Basic blueprint with theme and inline CSS content
+- **`blueprint-complete.json`** - Complete blueprint with WXR import and PHP URL replacement
 
-### Theme und Content
+### Theme and Content
 
-- **`fish-fixed.zip`** - Angepasstes Twenty Twenty-Five Child Theme mit korrigierten Google Fonts
-- **`complete-content.xml`** - WXR Export mit allen Posts, Seiten und Inhalten aus LocalWP
-- **`images/`** - Alle Bilder für die Website
+- **`fish-fixed.zip`** - Customized Twenty Twenty-Five child theme with corrected Google Fonts
+- **`complete-content.xml`** - WXR export with all posts, pages and content from LocalWP
+- **`images/`** - All images for the website
 
-## 🚀 Live Tests
+## Live Tests
 
-### Blueprint.json (Basis Version)
+### Blueprint.json (Basic Version)
 
 ```url
 https://playground.wordpress.net/?blueprint-url=https://raw.githubusercontent.com/rfluethi/WordPress-Playgrounds/main/theme-fische-example/blueprint.json
 ```
 
-- ✅ Installiert und aktiviert das angepasste Theme
-- ✅ Erstellt Basis-Content mit Inline-CSS styling
-- ✅ Funktioniert zuverlässig ohne PHP-Ausführung
+- Installs and activates the customized theme
+- Creates basic content with inline CSS styling
+- Works reliably without PHP execution
 
-### Blueprint-complete.json (Vollversion mit WXR)
+### Blueprint-complete.json (Full Version with WXR)
 
 ```url
 https://playground.wordpress.net/?blueprint-url=https://raw.githubusercontent.com/rfluethi/WordPress-Playgrounds/main/theme-fische-example/blueprint-complete.json
 ```
 
-- ✅ Installiert und aktiviert das angepasste Theme  
-- ✅ Importiert vollständige WXR-Inhalte aus LocalWP
-- ⚠️ Verwendet PHP-Script zur Bild-URL Ersetzung (kann instabil sein)
+- Installs and activates the customized theme
+- Imports complete WXR content from LocalWP
+- Uses PHP script for image URL replacement (may be unstable)
 
-## 🎨 Theme-Anpassungen
+## Theme Customizations
 
-Das `fish-fixed.zip` Theme basiert auf Twenty Twenty-Five und enthält:
+The `fish-fixed.zip` theme is based on Twenty Twenty-Five and contains:
 
-- **Custom Fonts:** Lobster Two und Nunito über Google Fonts
-- **Angepasste Farben:** Blau-Töne für Aquaristik-Theme
-- **Responsive Design:** Optimiert für verschiedene Bildschirmgrößen
+- **Custom Fonts:** Lobster Two and Nunito via Google Fonts
+- **Custom Colors:** Blue tones for aquarium theme
+- **Responsive Design:** Optimized for different screen sizes
 
-## 📊 Technische Details
+## Technical Details
 
 - **WordPress Version:** Latest
 - **PHP Version:** 8.3
 - **Theme Parent:** Twenty Twenty-Five
-- **Font-URLs:** Korrigiert von LocalWP auf Google Fonts
-- **Bild-Hosting:** GitHub Raw URLs
+- **Font URLs:** Corrected from LocalWP to Google Fonts
+- **Image Hosting:** GitHub Raw URLs
 - Vollständiger WXR-Import mit allen Seiten, Beiträgen und Kategorien
 - **Automatische Bild-URL-Ersetzung** von LocalWP zu GitHub URLs
 - Hero-Bereich mit Parallax-Hintergrund
