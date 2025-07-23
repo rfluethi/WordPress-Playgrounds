@@ -1,0 +1,47 @@
+{
+  "$schema": "https://playground.wordpress.net/blueprint-schema.json",
+  "preferredVersions": {
+    "php": "8.3",
+    "wp": "latest"
+  },
+  "features": {
+    "networking": true
+  },
+  "steps": [
+    {
+      "step": "setSiteOptions",
+      "options": {
+        "blogname": "FISH Simple Version",
+        "blogdescription": "With images in media library"
+      }
+    },
+    {
+      "step": "writeFile",
+      "path": "/wordpress/wp-content/uploads/clownfisch.webp",
+      "data": {
+        "resource": "url",
+        "url": "https://raw.githubusercontent.com/rfluethi/WordPress-Playgrounds/main/theme-fische-example/images/Clownfisch.webp"
+      }
+    },
+    {
+      "step": "writeFile",
+      "path": "/wordpress/wp-content/uploads/diskusfische.webp",
+      "data": {
+        "resource": "url", 
+        "url": "https://raw.githubusercontent.com/rfluethi/WordPress-Playgrounds/main/theme-fische-example/images/Diskusfische.webp"
+      }
+    },
+    {
+      "step": "writeFile",
+      "path": "/wordpress/wp-content/uploads/siamesischer-kampffisch.webp",
+      "data": {
+        "resource": "url",
+        "url": "https://raw.githubusercontent.com/rfluethi/WordPress-Playgrounds/main/theme-fische-example/images/Siamesischer-Kampffisch.webp"
+      }
+    },
+    {
+      "step": "runPHP",
+      "code": "<?php require_once 'wordpress/wp-load.php'; wp_set_current_user(1); function upload_image_to_media_library($file_path, $filename) { $upload_dir = wp_upload_dir(); $file_url = $upload_dir['url'] . '/' . $filename; if (!function_exists('wp_handle_sideload')) { require_once(ABSPATH . 'wp-admin/includes/file.php'); } if (!function_exists('wp_generate_attachment_metadata')) { require_once(ABSPATH . 'wp-admin/includes/image.php'); } $attachment = array( 'guid' => $file_url, 'post_mime_type' => 'image/webp', 'post_title' => pathinfo($filename, PATHINFO_FILENAME), 'post_content' => '', 'post_status' => 'inherit' ); $attach_id = wp_insert_attachment($attachment, $upload_dir['path'] . '/' . $filename); $attach_data = wp_generate_attachment_metadata($attach_id, $upload_dir['path'] . '/' . $filename); wp_update_attachment_metadata($attach_id, $attach_data); return $attach_id; } $clownfisch_id = upload_image_to_media_library('/wordpress/wp-content/uploads/clownfisch.webp', 'clownfisch.webp'); $diskusfische_id = upload_image_to_media_library('/wordpress/wp-content/uploads/diskusfische.webp', 'diskusfische.webp'); $kampffisch_id = upload_image_to_media_library('/wordpress/wp-content/uploads/siamesischer-kampffisch.webp', 'siamesischer-kampffisch.webp'); $upload_dir = wp_upload_dir(); $clownfisch_url = $upload_dir['url'] . '/clownfisch.webp'; $diskusfische_url = $upload_dir['url'] . '/diskusfische.webp'; $kampffisch_url = $upload_dir['url'] . '/siamesischer-kampffisch.webp'; $posts = array( array('title' => 'Clownfish', 'content' => '<div style=\"text-align: center; padding: 20px;\"><img src=\"' . $clownfisch_url . '\" alt=\"Clownfish\" style=\"width: 100%; max-width: 500px; height: auto;\"/><h1>Clownfish</h1><p>The clownfish is one of the most well-known marine fish with its characteristic orange and white stripes.</p></div>'), array('title' => 'Discus Fish', 'content' => '<div style=\"text-align: center; padding: 20px;\"><img src=\"' . $diskusfische_url . '\" alt=\"Discus Fish\" style=\"width: 100%; max-width: 500px; height: auto;\"/><h1>Discus Fish</h1><p>Discus fish are known as the kings of the freshwater aquarium.</p></div>'), array('title' => 'Siamese Fighting Fish', 'content' => '<div style=\"text-align: center; padding: 20px;\"><img src=\"' . $kampffisch_url . '\" alt=\"Siamese Fighting Fish\" style=\"width: 100%; max-width: 500px; height: auto;\"/><h1>Siamese Fighting Fish</h1><p>The Siamese fighting fish impresses with elegant fins and magnificent colors.</p></div>') ); foreach($posts as $post_data) { wp_insert_post(array('post_title' => $post_data['title'], 'post_content' => $post_data['content'], 'post_status' => 'publish', 'post_type' => 'post')); } echo 'Images uploaded to media library and posts created! Media items: ' . count(array($clownfisch_id, $diskusfische_id, $kampffisch_id)) . ', Posts: ' . count($posts); ?>"
+    }
+  ]
+}
