@@ -1,0 +1,41 @@
+{
+  "$schema": "https://playground.wordpress.net/blueprint-schema.json",
+  "preferredVersions": {
+    "php": "8.3",
+    "wp": "latest"
+  },
+  "features": {
+    "networking": true
+  },
+  "steps": [
+    {
+      "step": "runPHP",
+      "code": "<?php echo 'WordPress Playground lädt...'; ?>"
+    },
+    {
+      "step": "setSiteOptions", 
+      "options": {
+        "blogname": "🐠 FISCHE - Debug Test",
+        "blogdescription": "Debug Test"
+      }
+    },
+    {
+      "step": "runPHP",
+      "code": "<?php echo 'Site-Optionen gesetzt. Aktuelles Theme: ' . wp_get_theme()->get('Name'); ?>"
+    },
+    {
+      "step": "installTheme",
+      "themeData": {
+        "resource": "url",
+        "url": "https://raw.githubusercontent.com/rfluethi/WordPress-Playgrounds/main/theme-fische-example/twentytwentyfive.zip"
+      },
+      "options": {
+        "activate": true
+      }
+    },
+    {
+      "step": "runPHP",
+      "code": "<?php echo 'Theme installiert: ' . wp_get_theme()->get('Name') . ' - Version: ' . wp_get_theme()->get('Version'); ?>"
+    }
+  ]
+}
