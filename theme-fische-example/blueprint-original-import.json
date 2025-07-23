@@ -1,0 +1,44 @@
+{
+  "$schema": "https://playground.wordpress.net/blueprint-schema.json",
+  "preferredVersions": {
+    "php": "8.3",
+    "wp": "latest"
+  },
+  "features": {
+    "networking": true
+  },
+  "steps": [
+    {
+      "step": "installPlugin",
+      "pluginData": {
+        "resource": "wordpress.org/plugins",
+        "slug": "wordpress-importer"
+      }
+    },
+    {
+      "step": "installTheme",
+      "themeData": {
+        "resource": "url",
+        "url": "https://raw.githubusercontent.com/rfluethi/WordPress-Playgrounds/main/theme-fische-example/twentytwentyfive.zip"
+      },
+      "options": {
+        "activate": true
+      }
+    },
+    {
+      "step": "setSiteOptions", 
+      "options": {
+        "blogname": "Fische",
+        "blogdescription": "Naturwunder unter Wasser"
+      }
+    },
+    {
+      "step": "runPHP",
+      "code": "<?php require_once 'wordpress/wp-load.php'; wp_set_current_user(1); $github_base = 'https://raw.githubusercontent.com/rfluethi/WordPress-Playgrounds/main/theme-fische-example/'; $xml_url = $github_base . 'fische.xml'; $xml_content = file_get_contents($xml_url); if ($xml_content === false) { echo 'Fehler beim Laden der XML-Datei'; exit; } $upload_dir = wp_upload_dir(); $xml_file = $upload_dir['basedir'] . '/fische.xml'; file_put_contents($xml_file, $xml_content); if (!class_exists('WP_Import')) { $importer_file = ABSPATH . 'wp-admin/includes/class-wp-importer.php'; if (file_exists($importer_file)) { require_once $importer_file; } $import_file = WP_PLUGIN_DIR . '/wordpress-importer/wordpress-importer.php'; if (file_exists($import_file)) { require_once $import_file; } } if (class_exists('WP_Import')) { $importer = new WP_Import(); $importer->fetch_attachments = false; $importer->import($xml_file); echo 'LocalWP XML-Datei erfolgreich importiert! Alle originalen Inhalte und Kategorien wurden übernommen.'; } else { echo 'WordPress Importer konnte nicht geladen werden.'; } ?>"
+    },
+    {
+      "step": "runPHP",
+      "code": "<?php require_once 'wordpress/wp-load.php'; wp_set_current_user(1); $github_base = 'https://raw.githubusercontent.com/rfluethi/WordPress-Playgrounds/main/theme-fische-example/images/'; $image_replacements = array( 'http://seminar-demo-fische.local/wp-content/uploads/2025/07/Clownfisch.webp' => $github_base . 'Clownfisch.webp', 'http://seminar-demo-fische.local/wp-content/uploads/2025/07/Diskusfische.webp' => $github_base . 'Diskusfische.webp', 'http://seminar-demo-fische.local/wp-content/uploads/2025/07/Siamesischer-Kampffisch.webp' => $github_base . 'Siamesischer-Kampffisch.webp', 'http://seminar-demo-fische.local/wp-content/uploads/2025/07/Malabarbaerbling.webp' => $github_base . 'Malabarbaerbling.webp', 'http://seminar-demo-fische.local/wp-content/uploads/2025/07/Schleierschwanz-Goldfisch.webp' => $github_base . 'Schleierschwanz-Goldfisch.webp', 'http://seminar-demo-fische.local/wp-content/uploads/2025/07/Wallpaper-with-a-sea-reef.webp' => $github_base . 'Wallpaper-with-a-sea-reef.webp', 'http://seminar-demo-fische.local/wp-content/uploads/2025/07/cropped-Fisch-Titelseite.webp' => $github_base . 'cropped-Fisch-Titelseite.webp', 'http://seminar-demo-fische.local/wp-content/uploads/2025/07/Labyrinthfische.webp' => $github_base . 'Labyrinthfische.webp', 'http://seminar-demo-fische.local' => home_url() ); $posts = get_posts(array('post_type' => array('post', 'page'), 'post_status' => 'any', 'numberposts' => -1)); foreach ($posts as $post) { $content = $post->post_content; $updated = false; foreach ($image_replacements as $old_url => $new_url) { if (strpos($content, $old_url) !== false) { $content = str_replace($old_url, $new_url, $content); $updated = true; } } if ($updated) { wp_update_post(array('ID' => $post->ID, 'post_content' => $content)); } } $options_to_update = array('siteurl', 'home'); foreach ($options_to_update as $option) { $old_value = get_option($option); if (strpos($old_value, 'seminar-demo-fische.local') !== false) { $new_value = str_replace('http://seminar-demo-fische.local', home_url(), $old_value); update_option($option, $new_value); } } echo 'Bild-URLs erfolgreich von LocalWP auf GitHub umgestellt! Alle ' . count($posts) . ' Posts/Pages wurden aktualisiert.'; ?>"
+    }
+  ]
+}
