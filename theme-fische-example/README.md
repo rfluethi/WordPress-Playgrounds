@@ -1,6 +1,16 @@
 # WordPress Playground Fische-Demo
 
-Dieses Verzeichnis enthält einen WordPress Playground Blueprint mit einem kompletten Fische & Aquarien-Theme basierend auf dem aktualisierten LocalWP-Design.
+Dieses Verzeichnis enthält WordPress Playground Blueprints mit kompletten Fische & Aquarien-Themes basierend auf dem LocalWP-Design.
+
+## 🎯 Aktuelle empfohlene Version
+
+**[→ Blueprint mit LocalWP Theme & Content öffnen](https://playground.wordpress.net/?mode=seamless&blueprint-url=https://raw.githubusercontent.com/rfluethi/WordPress-Playgrounds/main/theme-fische-example/blueprint-localwp-complete.json)**
+
+Dieser Blueprint enthält:
+- ✅ Das komplette Twenty Twenty-Five Theme aus LocalWP
+- ✅ Alle originalen WebP-Bilder (37 Dateien) 
+- ✅ Beispiel-Content mit Fischartikeln
+- ✅ Bilder werden direkt in die WordPress Mediathek eingefügt
 
 ## Neue Features (Juli 2025)
 
