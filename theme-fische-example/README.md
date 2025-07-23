@@ -7,22 +7,28 @@ Eine vollständige WordPress Playground Demo mit angepasstem Theme und komplette
 **Vollständige Demo mit Custom Theme (empfohlen):**
 
 ```url
-https://playground.wordpress.net/?blueprint-url=https://raw.githubusercontent.com/rfluethi/WordPress-Playgrounds/main/theme-fische-example/blueprint-fixed.json
+https://playground.wordpress.net/?blueprint-url=https://raw.githubusercontent.com/rfluethi/WordPress-Playgrounds/main/theme-fische-example/blueprint-theme-working.json
 ```
 
-**Alternative Demo (falls WXR-Import nicht funktioniert):**
+**Einfache Demo mit Standard-Theme:**
 
 ```url
-https://playground.wordpress.net/?blueprint-url=https://raw.githubusercontent.com/rfluethi/WordPress-Playgrounds/main/theme-fische-example/blueprint-alternative.json
+https://playground.wordpress.net/?blueprint-url=https://raw.githubusercontent.com/rfluethi/WordPress-Playgrounds/main/theme-fische-example/blueprint-minimal-working.json
 ```
 
-**WXR-basierte Demo:**
+**WXR-basierte Demo (experimentell):**
 
 ```url
 https://playground.wordpress.net/?blueprint-url=https://raw.githubusercontent.com/rfluethi/WordPress-Playgrounds/main/theme-fische-example/blueprint-complete.json
 ```
 
-**Einfache Demo mit Standard-Theme:**
+**Alternative Demo (falls andere nicht funktionieren):**
+
+```url
+https://playground.wordpress.net/?blueprint-url=https://raw.githubusercontent.com/rfluethi/WordPress-Playgrounds/main/theme-fische-example/blueprint-alternative.json
+```
+
+**Original einfache Demo:**
 
 ```url
 https://playground.wordpress.net/?blueprint-url=https://raw.githubusercontent.com/rfluethi/WordPress-Playgrounds/main/theme-fische-example/blueprint.json
