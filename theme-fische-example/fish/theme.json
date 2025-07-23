@@ -1,0 +1,277 @@
+{
+	"settings": {
+		"color": {
+			"palette": [
+				{
+					"color": "#006090",
+					"name": "Basis",
+					"slug": "base"
+				},
+				{
+					"color": "#d2eef7",
+					"name": "Kontrast",
+					"slug": "contrast"
+				},
+				{
+					"color": "#0073ae",
+					"name": "Akzentfarbe 1",
+					"slug": "accent-1"
+				},
+				{
+					"color": "#e94f5b",
+					"name": "Akzentfarbe 2",
+					"slug": "accent-2"
+				},
+				{
+					"color": "#f2b134",
+					"name": "Akzentfarbe 3",
+					"slug": "accent-3"
+				},
+				{
+					"color": "#a08f7c",
+					"name": "Akzentfarbe 4",
+					"slug": "accent-4"
+				},
+				{
+					"color": "#3a6150",
+					"name": "Akzentfarbe 5",
+					"slug": "accent-5"
+				},
+				{
+					"color": "#012f4a",
+					"name": "Akzentfarbe 6",
+					"slug": "accent-6"
+				}
+			]
+		},
+		"typography": {
+			"fontFamilies": [
+				{
+					"fontFace": [
+						{
+							"fontFamily": "\"Lobster Two\"",
+							"fontStyle": "normal",
+							"fontWeight": "400",
+							"src": "https://fonts.gstatic.com/s/lobstertwo/v18/BngMUXZGTXPUvIoyV6yN59fP7KSJ4ACD.woff2"
+						},
+						{
+							"fontFamily": "\"Lobster Two\"",
+							"fontStyle": "normal",
+							"fontWeight": "700",
+							"src": "https://fonts.gstatic.com/s/lobstertwo/v18/BngRUXZGTXPUvIoyV6yN5-92w4CEyxyKeuDp.woff2"
+						},
+						{
+							"fontFamily": "\"Lobster Two\"",
+							"fontStyle": "italic",
+							"fontWeight": "400",
+							"src": "https://fonts.gstatic.com/s/lobstertwo/v18/BngOUXZGTXPUvIoyV6yN5-fI5qWr5RCDY_k.woff2"
+						},
+						{
+							"fontFamily": "\"Lobster Two\"",
+							"fontStyle": "italic",
+							"fontWeight": "700",
+							"src": "https://fonts.gstatic.com/s/lobstertwo/v18/BngTUXZGTXPUvIoyV6yN5-fI3hyEwR2of_DpXMY.woff2"
+						}
+					],
+					"fontFamily": "\"Lobster Two\", system-ui",
+					"name": "Lobster Two",
+					"slug": "lobster-two"
+				},
+				{
+					"fontFace": [
+						{
+							"fontFamily": "Nunito",
+							"fontStyle": "normal",
+							"fontWeight": "500",
+							"src": "https://fonts.gstatic.com/s/nunito/v26/XRXI3I6Li01BKofiOc5wtlZ2di8HDIkhRTY9jo7eTWk.woff2"
+						},
+						{
+							"fontFamily": "Nunito",
+							"fontStyle": "normal",
+							"fontWeight": "800",
+							"src": "https://fonts.gstatic.com/s/nunito/v26/XRXI3I6Li01BKofiOc5wtlZ2di8HDDsmRTY9jo7eTWk.woff2"
+						},
+						{
+							"fontFamily": "Nunito",
+							"fontStyle": "italic",
+							"fontWeight": "500",
+							"src": "https://fonts.gstatic.com/s/nunito/v26/XRXK3I6Li01BKofIMPyPbj8d7IEAGXNin3A3j6zbXWnoeg.woff2"
+						}
+					],
+					"fontFamily": "Nunito, sans-serif",
+					"name": "Nunito",
+					"slug": "nunito"
+				}
+			],
+			"fontSizes": [
+				{
+					"fluid": false,
+					"name": "Klein",
+					"size": "0.875rem",
+					"slug": "small"
+				},
+				{
+					"fluid": {
+						"max": "1.125rem",
+						"min": "1rem"
+					},
+					"name": "Mittel",
+					"size": "1rem",
+					"slug": "medium"
+				},
+				{
+					"fluid": {
+						"max": "1.375rem",
+						"min": "1.125rem"
+					},
+					"name": "Groß",
+					"size": "1.38rem",
+					"slug": "large"
+				},
+				{
+					"fluid": {
+						"max": "1.8rem",
+						"min": "1.4rem"
+					},
+					"name": "Extra groß",
+					"size": "1.4rem",
+					"slug": "x-large"
+				},
+				{
+					"fluid": {
+						"max": "2.6rem",
+						"min": "2rem"
+					},
+					"name": "Extrem groß",
+					"size": "2rem",
+					"slug": "xx-large"
+				}
+			]
+		}
+	},
+	"styles": {
+		"blocks": {
+			"core/code": {
+				"typography": {
+					"letterSpacing": "0px"
+				}
+			},
+			"core/heading": {
+				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--lobster-two)",
+					"lineHeight": "1.2"
+				}
+			},
+			"core/list": {
+				"typography": {
+					"lineHeight": "1.3"
+				}
+			},
+			"core/loginout": {
+				"typography": {
+					"fontSize": "var(--wp--preset--font-size--medium)"
+				}
+			},
+			"core/post-terms": {
+				"typography": {
+					"fontWeight": "400"
+				}
+			},
+			"core/pullquote": {
+				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--platypi)",
+					"letterSpacing": "-0.01em",
+					"lineHeight": "1.1"
+				}
+			},
+			"core/quote": {
+				"typography": {
+					"fontWeight": "300"
+				}
+			},
+			"core/search": {
+				"spacing": {
+					"margin": {
+						"bottom": "0",
+						"left": "0",
+						"right": "0",
+						"top": "0"
+					}
+				},
+				"typography": {
+					"fontSize": "var(--wp--preset--font-size--medium)",
+					"lineHeight": "1"
+				}
+			},
+			"core/site-title": {
+				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--ysabeau-office)",
+					"fontSize": "var(--wp--preset--font-size--large)",
+					"letterSpacing": "1.44px",
+					"textTransform": "uppercase"
+				}
+			}
+		},
+		"color": {
+			"background": "var(--wp--preset--color--accent-1)"
+		},
+		"elements": {
+			"button": {
+				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--nunito)",
+					"fontStyle": "normal",
+					"fontWeight": "500",
+					"letterSpacing": "1.44px",
+					"textTransform": "uppercase"
+				}
+			},
+			"caption": {
+				"color": {
+					"text": "var(--wp--preset--color--contrast)"
+				},
+				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--nunito)"
+				}
+			},
+			"h5": {
+				"typography": {
+					"fontSize": "var(--wp--preset--font-size--medium)",
+					"letterSpacing": "normal"
+				}
+			},
+			"h6": {
+				"typography": {
+					"fontSize": "var(--wp--preset--font-size--small)",
+					"fontStyle": "initial",
+					"fontWeight": "400",
+					"letterSpacing": "initial",
+					"textTransform": "initial"
+				}
+			},
+			"heading": {
+				"color": {
+					"text": "var(--wp--preset--color--contrast)"
+				},
+				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--lobster-two)",
+					"fontStyle": "normal",
+					"fontWeight": "400"
+				}
+			},
+			"link": {
+				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--nunito)"
+				}
+			}
+		},
+		"typography": {
+			"fontFamily": "var(--wp--preset--font-family--nunito)",
+			"fontStyle": "normal",
+			"fontWeight": "500",
+			"letterSpacing": "-0.22px",
+			"lineHeight": "1.5"
+		}
+	},
+	"version": 3,
+	"$schema": "https://schemas.wp.org/wp/6.8/theme.json"
+}
