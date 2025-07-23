@@ -1,0 +1,100 @@
+{
+  "$schema": "https://playground.wordpress.net/blueprint-schema.json",
+  "preferredVersions": {
+    "php": "8.3",
+    "wp": "latest"
+  },
+  "features": {
+    "networking": true
+  },
+  "steps": [
+    {
+      "step": "installTheme",
+      "themeData": {
+        "resource": "url",
+        "url": "https://raw.githubusercontent.com/rfluethi/WordPress-Playgrounds/main/theme-fische-example/twentytwentyfive-fische-updated.zip"
+      }
+    },
+    {
+      "step": "activateTheme",
+      "themeFolderName": "twentytwentyfive"
+    },
+    {
+      "step": "writeFile",
+      "path": "/wordpress/wp-content/uploads/2025/07/Clownfisch.webp",
+      "data": {
+        "resource": "url",
+        "url": "https://images.unsplash.com/photo-1544551763-46a013bb70d5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+      }
+    },
+    {
+      "step": "writeFile",
+      "path": "/wordpress/wp-content/uploads/2025/07/Diskusfische.webp",
+      "data": {
+        "resource": "url",
+        "url": "https://images.unsplash.com/photo-1524704654690-b56c05c78a00?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+      }
+    },
+    {
+      "step": "writeFile",
+      "path": "/wordpress/wp-content/uploads/2025/07/Siamesischer-Kampffisch.webp",
+      "data": {
+        "resource": "url",
+        "url": "https://images.unsplash.com/photo-1520637836862-4d197d17c88a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+      }
+    },
+    {
+      "step": "writeFile",
+      "path": "/wordpress/wp-content/uploads/2025/07/Schleierschwanz-Goldfisch.webp",
+      "data": {
+        "resource": "url",
+        "url": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+      }
+    },
+    {
+      "step": "writeFile",
+      "path": "/wordpress/wp-content/uploads/2025/07/Wallpaper-with-a-sea-reef.webp",
+      "data": {
+        "resource": "url",
+        "url": "https://images.unsplash.com/photo-1559827260-dc66d52bef19?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+      }
+    },
+    {
+      "step": "writeFile",
+      "path": "/wordpress/wp-content/uploads/2025/07/Labyrinthfische.webp",
+      "data": {
+        "resource": "url",
+        "url": "https://images.unsplash.com/photo-1535591273668-578e31182c4f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+      }
+    },
+    {
+      "step": "writeFile",
+      "path": "/wordpress/wp-content/uploads/2025/07/cropped-Fisch-Titelseite.webp",
+      "data": {
+        "resource": "url",
+        "url": "https://images.unsplash.com/photo-1583212292454-1fe6229603b7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
+      }
+    },
+    {
+      "step": "importWxr",
+      "file": {
+        "resource": "url",
+        "url": "https://raw.githubusercontent.com/rfluethi/WordPress-Playgrounds/main/theme-fische-example/fische.xml"
+      }
+    },
+    {
+      "step": "setSiteOptions",
+      "options": {
+        "blogname": "FISCHE",
+        "blogdescription": "Naturwunder unter Wasser",
+        "start_of_week": "1",
+        "timezone_string": "Europe/Zurich",
+        "date_format": "j. F Y",
+        "time_format": "H:i",
+        "show_on_front": "page",
+        "page_on_front": 2,
+        "posts_per_page": 6
+      }
+    }
+  ]
+}
