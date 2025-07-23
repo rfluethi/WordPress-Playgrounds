@@ -10,6 +10,12 @@ Eine vollständige WordPress Playground Demo mit angepasstem Theme und komplette
 https://playground.wordpress.net/?blueprint-url=https://raw.githubusercontent.com/rfluethi/WordPress-Playgrounds/main/theme-fische-example/blueprint-complete.json
 ```
 
+**Alternative Demo (falls WXR-Import nicht funktioniert):**
+
+```url
+https://playground.wordpress.net/?blueprint-url=https://raw.githubusercontent.com/rfluethi/WordPress-Playgrounds/main/theme-fische-example/blueprint-alternative.json
+```
+
 **Einfache Demo mit Standard-Theme:**
 
 ```url
