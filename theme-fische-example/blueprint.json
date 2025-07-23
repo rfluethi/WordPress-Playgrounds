@@ -11,8 +11,8 @@
     {
       "step": "setSiteOptions",
       "options": {
-        "blogname": "FISCHE Einfache Version",
-        "blogdescription": "Nur mit Bildern - Absolute Paths Fixed"
+        "blogname": "FISCHE Demo",
+        "blogdescription": "WordPress Playground Demo mit Fisch-Bildern"
       }
     },
     {
