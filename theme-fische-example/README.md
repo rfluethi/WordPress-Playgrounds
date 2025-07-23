@@ -1,10 +1,16 @@
 # FISH - WordPress Playground Example
 
-A simple WordPress Playground demo with fish images.
+Eine vollständige WordPress Playground Demo mit angepasstem Theme und komplettem Inhalt.
 
 ## Usage
 
-**Open this URL to start the demo:**
+**Vollständige Demo mit Custom Theme (empfohlen):**
+
+```url
+https://playground.wordpress.net/?blueprint-url=https://raw.githubusercontent.com/rfluethi/WordPress-Playgrounds/main/theme-fische-example/blueprint-complete.json
+```
+
+**Einfache Demo mit Standard-Theme:**
 
 ```url
 https://playground.wordpress.net/?blueprint-url=https://raw.githubusercontent.com/rfluethi/WordPress-Playgrounds/main/theme-fische-example/blueprint.json
@@ -12,16 +18,31 @@ https://playground.wordpress.net/?blueprint-url=https://raw.githubusercontent.co
 
 ## Contents
 
-- **blueprint.json**: Main configuration file for WordPress Playground
-- **images/**: Directory with WebP images of fish
-- **README.md**: This file
+- **blueprint-complete.json**: Vollständige Konfiguration mit Custom Theme und WXR-Import
+- **blueprint.json**: Einfache Konfiguration mit Standard Twenty Twenty-Five Theme
+- **complete-content.xml**: WXR-Export mit allen Inhalten aus LocalWP
+- **fish.zip**: Angepasstes Child-Theme von Twenty Twenty-Five
+- **images/**: Verzeichnis mit WebP-Bildern der Fische
+- **README.md**: Diese Datei
 
 ## Features
 
+### Vollständige Demo (blueprint-complete.json)
+
+- Angepasstes Child-Theme basierend auf Twenty Twenty-Five
+- Vollständiger WXR-Import mit allen Seiten, Beiträgen und Kategorien
+- Hero-Bereich mit Parallax-Hintergrund
+- Responsive Grid-Layout für Beiträge
+- Mehrere Fischkategorien (Buntbarsche, Labyrinthfische, Karpfenartige, Meeresfische)
+- Datenschutzerklärung und Beispielseite
+- Vollständig angepasstes Design
+
+### Einfache Demo (blueprint.json)
+
 - GitHub-hosted WebP images
-- Three fish posts (Clownfish, Discus fish, Siamese fighting fish)
-- Clean, emoji-free presentation
-- Responsive images with maximum width
+- Drei Fisch-Beiträge (Clownfisch, Diskusfische, Siamesischer Kampffisch)
+- Saubere, emoji-freie Darstellung
+- Responsive Bilder mit maximaler Breite
 - Absolute paths for WordPress Playground compatibility
 
 ## Technical Notes
@@ -30,12 +51,12 @@ https://playground.wordpress.net/?blueprint-url=https://raw.githubusercontent.co
 - Images are **not stored in WordPress media library** due to WordPress Playground security limitations
 - This is the most reliable approach for WordPress Playground demos
 
-## Images
+## Available Images
 
-The following fish images are available:
+The following fish images are included:
 
 - Clownfisch.webp
 - Diskusfische.webp  
 - Siamesischer-Kampffisch.webp
 
-All images are loaded directly from GitHub Raw.
+All images are loaded directly from GitHub Raw URLs.

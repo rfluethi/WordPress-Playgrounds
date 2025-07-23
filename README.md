@@ -103,18 +103,23 @@ This example showcases how to create responsive column layouts that maintain con
 **Difficulty**: Beginner  
 **Use Cases**: Theme testing, content demonstration, educational projects  
 
-This example shows how to automatically install and activate a WordPress theme with a complete fish & aquarium website. Features custom content, navigation menus, and site configuration - perfect for demonstrating a fully functional WordPress site.
+This example shows how to automatically install and activate a WordPress theme with a complete fish & aquarium website. Available in two versions: a complete demo with custom child theme and WXR import, and a simple version with standard theme.
 
 **Features**:
 
 - Complete fish & aquarium demo website
 - Automatic theme installation and activation
-- Custom navigation menu creation
+- Custom child theme based on Twenty Twenty-Five
 - WXR content import with posts, pages, and categories
+- Multiple fish categories (Buntbarsche, Labyrinthfische, Karpfenartige, Meeresfische)
+- Hero section with parallax background
+- Responsive grid layout for posts
 - Site configuration and customizer settings
-- Development environment setup
 
-**Try it**: [Launch Theme Example](https://playground.wordpress.net/?mode=seamless&blueprint-url=https://raw.githubusercontent.com/rfluethi/WordPress-Playgrounds/main/theme-fische-example/blueprint-minimal-working.json)
+**Try it**:
+
+- [Complete Demo with Custom Theme](https://playground.wordpress.net/?blueprint-url=https://raw.githubusercontent.com/rfluethi/WordPress-Playgrounds/main/theme-fische-example/blueprint-complete.json) (recommended)
+- [Simple Demo with Standard Theme](https://playground.wordpress.net/?blueprint-url=https://raw.githubusercontent.com/rfluethi/WordPress-Playgrounds/main/theme-fische-example/blueprint.json)
 
 **Documentation**: [View theme-fische-example directory](theme-fische-example/)
 
