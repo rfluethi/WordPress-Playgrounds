@@ -9,46 +9,15 @@
   },
   "steps": [
     {
-      "step": "installTheme",
-      "themeData": {
-        "resource": "url",
-        "url": "https://raw.githubusercontent.com/rfluethi/WordPress-Playgrounds/main/theme-fische-example/twentytwentyfive-fische-updated.zip"
-      }
-    },
-    {
-      "step": "activateTheme",
-      "themeFolderName": "twentytwentyfive"
-    },
-    {
-      "step": "importWxr",
-      "file": {
-        "resource": "url",
-        "url": "https://raw.githubusercontent.com/rfluethi/WordPress-Playgrounds/main/theme-fische-example/fische.xml"
-      }
-    },
-    {
       "step": "setSiteOptions",
       "options": {
-        "blogname": "FISCHE",
-        "blogdescription": "Naturwunder unter Wasser",
-        "start_of_week": "1",
-        "timezone_string": "Europe/Zurich",
-        "date_format": "j. F Y",
-        "time_format": "H:i",
-        "show_on_front": "page",
-        "page_on_front": 2,
-        "posts_per_page": 6
+        "blogname": "FISCHE Einfache Version",
+        "blogdescription": "Nur mit Bildern"
       }
     },
     {
-      "step": "defineWpConfigConsts",
-      "consts": {
-        "WP_DEBUG": true,
-        "WP_DEBUG_LOG": true,
-        "WP_DEBUG_DISPLAY": false,
-        "SCRIPT_DEBUG": true,
-        "WP_ENVIRONMENT_TYPE": "development"
-      }
+      "step": "runPHP",
+      "code": "<?php require_once 'wordpress/wp-load.php'; wp_set_current_user(1); $github_base = 'https://raw.githubusercontent.com/rfluethi/WordPress-Playgrounds/main/theme-fische-example/images/'; $posts = array( array('title' => 'Clownfisch', 'content' => '<div style=\"text-align: center; padding: 20px;\"><img src=\"' . $github_base . 'Clownfisch.webp\" alt=\"Clownfisch\" style=\"width: 100%; max-width: 500px; height: auto;\"/><h1>Clownfisch</h1><p>Der Clownfisch ist einer der bekanntesten Meeresfische mit seinen charakteristischen orangen und weißen Streifen.</p></div>'), array('title' => 'Diskusfische', 'content' => '<div style=\"text-align: center; padding: 20px;\"><img src=\"' . $github_base . 'Diskusfische.webp\" alt=\"Diskusfische\" style=\"width: 100%; max-width: 500px; height: auto;\"/><h1>Diskusfische</h1><p>Diskusfische werden als die Koenige des Suesswasseraquariums bezeichnet.</p></div>'), array('title' => 'Siamesischer Kampffisch', 'content' => '<div style=\"text-align: center; padding: 20px;\"><img src=\"' . $github_base . 'Siamesischer-Kampffisch.webp\" alt=\"Siamesischer Kampffisch\" style=\"width: 100%; max-width: 500px; height: auto;\"/><h1>Siamesischer Kampffisch</h1><p>Der Siamesische Kampffisch besticht durch elegante Flossen und praechtige Farben.</p></div>') ); foreach($posts as $post_data) { wp_insert_post(array('post_title' => $post_data['title'], 'post_content' => $post_data['content'], 'post_status' => 'publish', 'post_type' => 'post')); } echo 'Komplett saubere Version ohne Emojis erstellt! ' . count($posts) . ' Posts hinzugefuegt.'; ?>"
     }
   ]
 }
