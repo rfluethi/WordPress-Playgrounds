@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0"
+    xmlns:excerpt="http://wordpress.org/export/1.2/excerpt/"
+    xmlns:content="http://purl.org/rss/1.0/modules/content/"
+    xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:wp="http://wordpress.org/export/1.2/">
+
+<channel>
+    <title>🐠 FISCHE - Naturwunder unter Wasser</title>
+    <description>Entdecke die faszinierende Welt der Aquaristik</description>
+    <language>de-DE</language>
+    <wp:wxr_version>1.2</wp:wxr_version>
+    <wp:base_site_url>https://playground.wordpress.net</wp:base_site_url>
+    <wp:base_blog_url>https://playground.wordpress.net</wp:base_blog_url>
+
+    <!-- Sample Fish Posts with Content -->
+    <item>
+        <title>Clownfisch - Der bunte Held der Korallenriffe</title>
+        <link>https://playground.wordpress.net/clownfisch/</link>
+        <pubDate>Wed, 16 Jul 2025 12:00:00 +0000</pubDate>
+        <dc:creator><![CDATA[admin]]></dc:creator>
+        <guid isPermaLink="false">https://playground.wordpress.net/clownfisch/</guid>
+        <description></description>
+        <content:encoded><![CDATA[
+        <p>Der Clownfisch, auch bekannt als Anemonenfisch, ist einer der bekanntesten und beliebtesten Meeresfische in der Aquaristik. Mit seiner leuchtend orangen Farbe und den charakteristischen weißen Streifen ist er ein echter Hingucker in jedem Salzwasseraquarium.</p>
+        
+        <p><img src="wp-content/uploads/2025/07/Clownfisch.webp" alt="Clownfisch" class="wp-image-clownfisch" /></p>
+        
+        <h2>Besondere Eigenschaften</h2>
+        <ul>
+        <li>Symbiotische Beziehung mit Seeanemonen</li>
+        <li>Farbwechsel je nach Stimmung</li>
+        <li>Sehr soziale Tiere</li>
+        <li>Einfach zu pflegen</li>
+        </ul>
+        
+        <p>Die Haltung von Clownfischen ist auch für Anfänger geeignet, da sie sehr robust und anpassungsfähig sind.</p>
+        ]]></content:encoded>
+        <excerpt:encoded><![CDATA[Der Clownfisch ist einer der bekanntesten Meeresfische und perfekt für Aquaristik-Einsteiger geeignet.]]></excerpt:encoded>
+        <wp:post_id>10</wp:post_id>
+        <wp:post_date>2025-07-16 12:00:00</wp:post_date>
+        <wp:post_date_gmt>2025-07-16 12:00:00</wp:post_date_gmt>
+        <wp:post_name>clownfisch</wp:post_name>
+        <wp:status>publish</wp:status>
+        <wp:post_parent>0</wp:post_parent>
+        <wp:menu_order>0</wp:menu_order>
+        <wp:post_type>post</wp:post_type>
+        <wp:post_password></wp:post_password>
+        <wp:is_sticky>0</wp:is_sticky>
+        <category domain="category" nicename="salzwasserfische"><![CDATA[Salzwasserfische]]></category>
+    </item>
+
+    <item>
+        <title>Diskusfische - Die Könige des Süßwasseraquariums</title>
+        <link>https://playground.wordpress.net/diskusfische/</link>
+        <pubDate>Wed, 16 Jul 2025 13:00:00 +0000</pubDate>
+        <dc:creator><![CDATA[admin]]></dc:creator>
+        <guid isPermaLink="false">https://playground.wordpress.net/diskusfische/</guid>
+        <description></description>
+        <content:encoded><![CDATA[
+        <p>Diskusfische werden oft als die "Könige des Süßwasseraquariums" bezeichnet. Ihre majestätische Erscheinung und ihre vielfältigen Farbvarianten machen sie zu einem absoluten Highlight in jedem Aquarium.</p>
+        
+        <p><img src="wp-content/uploads/2025/07/Diskusfische.webp" alt="Diskusfische" class="wp-image-diskusfische" /></p>
+        
+        <h2>Pflege und Haltung</h2>
+        <ul>
+        <li>Benötigen weiches, saures Wasser</li>
+        <li>Temperatur zwischen 26-30°C</li>
+        <li>Regelmäßige Wasserwechsel wichtig</li>
+        <li>Schwarmfische - mindestens 5 Tiere</li>
+        </ul>
+        
+        <p>Diskusfische sind anspruchsvoller in der Haltung, belohnen aber mit ihrer außergewöhnlichen Schönheit.</p>
+        ]]></content:encoded>
+        <excerpt:encoded><![CDATA[Diskusfische sind majestätische Süßwasserfische, die als Könige des Aquariums gelten.]]></excerpt:encoded>
+        <wp:post_id>11</wp:post_id>
+        <wp:post_date>2025-07-16 13:00:00</wp:post_date>
+        <wp:post_date_gmt>2025-07-16 13:00:00</wp:post_date_gmt>
+        <wp:post_name>diskusfische</wp:post_name>
+        <wp:status>publish</wp:status>
+        <wp:post_parent>0</wp:post_parent>
+        <wp:menu_order>0</wp:menu_order>
+        <wp:post_type>post</wp:post_type>
+        <wp:post_password></wp:post_password>
+        <wp:is_sticky>0</wp:is_sticky>
+        <category domain="category" nicename="suesswasserfische"><![CDATA[Süßwasserfische]]></category>
+    </item>
+
+    <item>
+        <title>Labyrinthfische - Meister der Oberflächenatmung</title>
+        <link>https://playground.wordpress.net/labyrinthfische/</link>
+        <pubDate>Wed, 16 Jul 2025 14:00:00 +0000</pubDate>
+        <dc:creator><![CDATA[admin]]></dc:creator>
+        <guid isPermaLink="false">https://playground.wordpress.net/labyrinthfische/</guid>
+        <description></description>
+        <content:encoded><![CDATA[
+        <p>Labyrinthfische sind eine faszinierende Gruppe von Süßwasserfischen, die über ein spezielles Atemorgan verfügen. Dieses Labyrinthorgan ermöglicht es ihnen, atmosphärischen Sauerstoff zu atmen.</p>
+        
+        <p><img src="wp-content/uploads/2025/07/Labyrinthfische.webp" alt="Labyrinthfische" class="wp-image-labyrinthfische" /></p>
+        
+        <h2>Besonderheiten</h2>
+        <ul>
+        <li>Können atmosphärischen Sauerstoff atmen</li>
+        <li>Bauen Schaumnester für die Brut</li>
+        <li>Sehr territoriale Tiere</li>
+        <li>Robuste und pflegeleichte Arten</li>
+        </ul>
+        
+        <p>Zu den bekanntesten Labyrinthfischen gehören Kampffische, Guramis und Makropoden.</p>
+        ]]></content:encoded>
+        <excerpt:encoded><![CDATA[Labyrinthfische können dank ihres speziellen Atemorgans atmosphärischen Sauerstoff nutzen.]]></excerpt:encoded>
+        <wp:post_id>12</wp:post_id>
+        <wp:post_date>2025-07-16 14:00:00</wp:post_date>
+        <wp:post_date_gmt>2025-07-16 14:00:00</wp:post_date_gmt>
+        <wp:post_name>labyrinthfische</wp:post_name>
+        <wp:status>publish</wp:status>
+        <wp:post_parent>0</wp:post_parent>
+        <wp:menu_order>0</wp:menu_order>
+        <wp:post_type>post</wp:post_type>
+        <wp:post_password></wp:post_password>
+        <wp:is_sticky>0</wp:is_sticky>
+        <category domain="category" nicename="suesswasserfische"><![CDATA[Süßwasserfische]]></category>
+    </item>
+
+    <item>
+        <title>Siamesischer Kampffisch - Eleganz in Bewegung</title>
+        <link>https://playground.wordpress.net/kampffisch/</link>
+        <pubDate>Wed, 16 Jul 2025 15:00:00 +0000</pubDate>
+        <dc:creator><![CDATA[admin]]></dc:creator>
+        <guid isPermaLink="false">https://playground.wordpress.net/kampffisch/</guid>
+        <description></description>
+        <content:encoded><![CDATA[
+        <p>Der Siamesische Kampffisch ist bekannt für seine prächtigen Flossen und sein territorielles Verhalten. Diese eleganten Fische sind in der Aquaristik sehr beliebt und relativ einfach zu halten.</p>
+        
+        <p><img src="wp-content/uploads/2025/07/Siamesischer-Kampffisch.webp" alt="Siamesischer Kampffisch" class="wp-image-kampffisch" /></p>
+        
+        <h2>Haltungshinweise</h2>
+        <ul>
+        <li>Einzelhaltung von Männchen</li>
+        <li>Wassertemperatur 24-26°C</li>
+        <li>Schwache Strömung bevorzugt</li>
+        <li>Versteckmöglichkeiten wichtig</li>
+        </ul>
+        
+        <p>Kampffische sind Labyrinthfische und können an der Wasseroberfläche atmen.</p>
+        ]]></content:encoded>
+        <excerpt:encoded><![CDATA[Der Siamesische Kampffisch besticht durch elegante Flossen und ist bei Aquarianern sehr beliebt.]]></excerpt:encoded>
+        <wp:post_id>13</wp:post_id>
+        <wp:post_date>2025-07-16 15:00:00</wp:post_date>
+        <wp:post_date_gmt>2025-07-16 15:00:00</wp:post_date_gmt>
+        <wp:post_name>kampffisch</wp:post_name>
+        <wp:status>publish</wp:status>
+        <wp:post_parent>0</wp:post_parent>
+        <wp:menu_order>0</wp:menu_order>
+        <wp:post_type>post</wp:post_type>
+        <wp:post_password></wp:post_password>
+        <wp:is_sticky>0</wp:is_sticky>
+        <category domain="category" nicename="suesswasserfische"><![CDATA[Süßwasserfische]]></category>
+    </item>
+
+    <!-- Home Page -->
+    <item>
+        <title>Willkommen in der faszinierenden Welt der Fische</title>
+        <link>https://playground.wordpress.net/</link>
+        <pubDate>Wed, 16 Jul 2025 10:00:00 +0000</pubDate>
+        <dc:creator><![CDATA[admin]]></dc:creator>
+        <guid isPermaLink="false">https://playground.wordpress.net/welcome/</guid>
+        <description></description>
+        <content:encoded><![CDATA[
+        <p><img src="wp-content/uploads/2025/07/Wallpaper-with-a-sea-reef.webp" alt="Unterwasserwelt" class="wp-image-reef-wallpaper" /></p>
+        
+        <h1>🐠 Entdecke die Unterwasserwelt</h1>
+        <p>Tauche ein in die faszinierende Welt der Aquaristik! Hier findest du alles über die Pflege und Haltung von Süß- und Salzwasserfischen.</p>
+        
+        <h2>Unsere beliebtesten Fischarten:</h2>
+        <ul>
+        <li><strong>Clownfische</strong> - Die bunten Stars der Salzwasseraquaristik</li>
+        <li><strong>Diskusfische</strong> - Majestätische Könige des Süßwassers</li>
+        <li><strong>Labyrinthfische</strong> - Meister der Oberflächenatmung</li>
+        <li><strong>Kampffische</strong> - Elegante Einzelgänger</li>
+        </ul>
+        
+        <p>Ob Anfänger oder Experte - hier findest du wertvolle Tipps für dein perfektes Aquarium!</p>
+        ]]></content:encoded>
+        <excerpt:encoded><![CDATA[Willkommen in der faszinierenden Welt der Aquaristik mit Tipps für Süß- und Salzwasserfische.]]></excerpt:encoded>
+        <wp:post_id>14</wp:post_id>
+        <wp:post_date>2025-07-16 10:00:00</wp:post_date>
+        <wp:post_date_gmt>2025-07-16 10:00:00</wp:post_date_gmt>
+        <wp:post_name>welcome</wp:post_name>
+        <wp:status>publish</wp:status>
+        <wp:post_parent>0</wp:post_parent>
+        <wp:menu_order>0</wp:menu_order>
+        <wp:post_type>page</wp:post_type>
+        <wp:post_password></wp:post_password>
+        <wp:is_sticky>1</wp:is_sticky>
+    </item>
+
+</channel>
+</rss>
