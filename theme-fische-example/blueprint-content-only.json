@@ -1,0 +1,48 @@
+{
+  "$schema": "https://playground.wordpress.net/blueprint-schema.json",
+  "preferredVersions": {
+    "php": "8.3",
+    "wp": "latest"
+  },
+  "features": {
+    "networking": true
+  },
+  "steps": [
+    {
+      "step": "installTheme",
+      "themeData": {
+        "resource": "url",
+        "url": "https://raw.githubusercontent.com/rfluethi/WordPress-Playgrounds/main/theme-fische-example/twentytwentyfive-fische-updated.zip"
+      }
+    },
+    {
+      "step": "activateTheme",
+      "themeFolderName": "twentytwentyfive"
+    },
+    {
+      "step": "importWxr",
+      "file": {
+        "resource": "url",
+        "url": "https://raw.githubusercontent.com/rfluethi/WordPress-Playgrounds/main/theme-fische-example/demo-content-complete.xml"
+      }
+    },
+    {
+      "step": "setSiteOptions",
+      "options": {
+        "blogname": "FISCHE",
+        "blogdescription": "Naturwunder unter Wasser",
+        "start_of_week": "1",
+        "timezone_string": "Europe/Zurich",
+        "date_format": "j. F Y",
+        "time_format": "H:i",
+        "show_on_front": "page",
+        "page_on_front": 2,
+        "posts_per_page": 6
+      }
+    },
+    {
+      "step": "runPHP",
+      "code": "<?php\n$fish_posts = array(\n  array('title' => 'Der faszinierende Clownfisch', 'content' => 'Der Clownfisch ist einer der bekanntesten Meeresfische. Diese kleinen, orange-schwarzen Fische leben in einer Symbiose mit Seeanemonen.'),\n  array('title' => 'Diskusfische - Koenige des Suesswassers', 'content' => 'Diskusfische gelten als die Koenige der Suesswasseraquaristik. Sie haben einen scheibenfoermigen Koerper.'),\n  array('title' => 'Siamesischer Kampffisch', 'content' => 'Der Siamesische Kampffisch ist ein Labyrinthfisch, der atmosphaerischen Sauerstoff atmen kann.'),\n  array('title' => 'Goldfische - Klassiker der Aquaristik', 'content' => 'Goldfische sind die klassischen Aquarienfische und koennen ueber 20 Jahre alt werden.')\n);\nforeach($fish_posts as $fish) {\n  wp_insert_post(array('post_title' => $fish['title'], 'post_content' => $fish['content'], 'post_status' => 'publish', 'post_type' => 'post'));\n}\necho 'Fische-Posts erstellt!';\n?>"
+    }
+  ]
+}

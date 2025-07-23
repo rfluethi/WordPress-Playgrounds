@@ -114,7 +114,7 @@ This example shows how to automatically install and activate a WordPress theme w
 - Site configuration and customizer settings
 - Development environment setup
 
-**Try it**: [Launch Theme Example](https://playground.wordpress.net/?mode=seamless&blueprint-url=https://raw.githubusercontent.com/rfluethi/WordPress-Playgrounds/main/theme-fische-example/blueprint-with-images.json)
+**Try it**: [Launch Theme Example](https://playground.wordpress.net/?mode=seamless&blueprint-url=https://raw.githubusercontent.com/rfluethi/WordPress-Playgrounds/main/theme-fische-example/blueprint-content-only.json)
 
 **Documentation**: [View theme-fische-example directory](theme-fische-example/)
 
