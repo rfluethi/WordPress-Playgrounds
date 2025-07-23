@@ -1,28 +1,27 @@
 # WordPress Playground Fische-Demo
 
-Dieses Verzeichnis enthält einen WordPress Playground Blueprint mit einem kompletten Fische & Aquarien-Theme basierend auf Twenty Twenty-Five.
+Dieses Verzeichnis enthält einen WordPress Playground Blueprint mit einem kompletten Fische & Aquarien-Theme basierend auf dem aktualisierten LocalWP-Design.
+
+## Neue Features (Juli 2025)
+
+✨ **LocalWP-Integration**: Jetzt mit dem echten Design aus der LocalWP-Installation  
+🎨 **Verbessertes Design**: Schönes blaues Unterwasser-Theme  
+📄 **Aktueller Content**: Frische Inhalte aus `fische.xml`  
+🐠 **Authentisches Aussehen**: Exakte Replikation der ursprünglichen Website  
 
 ## Dateien
 
-- **`blueprint.json`** - Das WordPress Playground Blueprint
-- **`demo-content-complete.xml`** - WXR-Export mit vollständigem Fische-Content
+- **`blueprint.json`** - Haupt-Blueprint mit LocalWP-Theme und aktuellem Content
+- **`blueprint-localwp-theme.json`** - Spezielle LocalWP-Version
+- **`fische.xml`** - Aktueller WXR-Export aus LocalWP (Juli 2025)
+- **`twentytwentyfive-fische-updated.zip`** - Aktualisiertes Theme-Paket aus LocalWP
+- **`demo-content-complete.xml`** - Älterer Demo-Content (Backup)
 
 ## Verwendung
 
-### 🚨 PROBLEMLÖSUNG - Playground lädt nicht richtig
+### 🌊 AKTUELLE Test-Links - Mit LocalWP-Design
 
-**Häufige Ursachen für leere Playgrounds:**
-
-1. WordPress Playground Cache-Probleme
-2. GitHub Raw URL Delays (bis zu 5 Minuten)
-3. Blueprint-Syntax-Fehler
-4. CORS-Probleme
-
----
-
-### ✅ KORRIGIERTE Test-Links (funktionieren garantiert)
-
-**🔧 Test 1 - Basis-WordPress (leer, als Referenz):**
+**� Hauptversion (empfohlen):**
 
 ```url
 https://playground.wordpress.net/

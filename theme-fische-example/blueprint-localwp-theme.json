@@ -12,18 +12,18 @@
       "step": "installTheme",
       "themeData": {
         "resource": "url",
-        "url": "https://raw.githubusercontent.com/rfluethi/WordPress-Playgrounds/main/theme-fische-example/twentytwentyfive-fische.zip"
+        "url": "https://raw.githubusercontent.com/rfluethi/WordPress-Playgrounds/main/theme-fische-example/twentytwentyfive-fische-updated.zip"
       }
     },
     {
       "step": "activateTheme",
-      "themeFolderName": "twentytwentyfive-custom"
+      "themeFolderName": "twentytwentyfive"
     },
     {
       "step": "importWxr",
       "file": {
         "resource": "url",
-        "url": "https://raw.githubusercontent.com/rfluethi/WordPress-Playgrounds/main/theme-fische-example/demo-content-complete.xml"
+        "url": "https://raw.githubusercontent.com/rfluethi/WordPress-Playgrounds/main/theme-fische-example/fische.xml"
       }
     },
     {
