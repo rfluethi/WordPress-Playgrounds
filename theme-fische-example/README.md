@@ -31,11 +31,12 @@ https://playground.wordpress.net/?blueprint-url=https://raw.githubusercontent.co
 
 - Angepasstes Child-Theme basierend auf Twenty Twenty-Five
 - Vollständiger WXR-Import mit allen Seiten, Beiträgen und Kategorien
+- **Automatische Bild-URL-Ersetzung** von LocalWP zu GitHub URLs
 - Hero-Bereich mit Parallax-Hintergrund
 - Responsive Grid-Layout für Beiträge
 - Mehrere Fischkategorien (Buntbarsche, Labyrinthfische, Karpfenartige, Meeresfische)
 - Datenschutzerklärung und Beispielseite
-- Vollständig angepasstes Design
+- Vollständig angepasstes Design mit funktionierenden Bildern
 
 ### Einfache Demo (blueprint.json)
 

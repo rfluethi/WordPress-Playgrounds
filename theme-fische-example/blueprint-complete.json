@@ -29,6 +29,10 @@
         "resource": "url",
         "url": "https://raw.githubusercontent.com/rfluethi/WordPress-Playgrounds/main/theme-fische-example/complete-content.xml"
       }
+    },
+    {
+      "step": "runPHP",
+      "code": "<?php require_once '/wordpress/wp-load.php'; wp_set_current_user(1); $github_base = 'https://raw.githubusercontent.com/rfluethi/WordPress-Playgrounds/main/theme-fische-example/images/'; $local_base = 'http://seminar-demo-fische.local/wp-content/uploads/2025/07/'; $image_replacements = array( $local_base . 'Wallpaper-with-a-sea-reef.webp' => $github_base . 'Wallpaper-with-a-sea-reef.webp', $local_base . 'cropped-Fisch-Titelseite.webp' => $github_base . 'cropped-Fisch-Titelseite.webp', $local_base . 'Labyrinthfische.webp' => $github_base . 'Labyrinthfische.webp', $local_base . 'Clownfisch.webp' => $github_base . 'Clownfisch.webp', $local_base . 'Diskusfische.webp' => $github_base . 'Diskusfische.webp', $local_base . 'Siamesischer-Kampffisch.webp' => $github_base . 'Siamesischer-Kampffisch.webp', $local_base . 'Malabarbaerbling.webp' => $github_base . 'Malabarbaerbling.webp', $local_base . 'Schleierschwanz-Goldfisch.webp' => $github_base . 'Schleierschwanz-Goldfisch.webp' ); $posts = get_posts(array('post_type' => array('post', 'page'), 'post_status' => 'any', 'numberposts' => -1)); foreach($posts as $post) { $content = $post->post_content; $updated = false; foreach($image_replacements as $local_url => $github_url) { if(strpos($content, $local_url) !== false) { $content = str_replace($local_url, $github_url, $content); $updated = true; } } if($updated) { wp_update_post(array('ID' => $post->ID, 'post_content' => $content)); } } echo 'Bild-URLs erfolgreich von LocalWP zu GitHub aktualisiert! ' . count($posts) . ' Posts überprüft.'; ?>"
     }
   ],
   "login": true,
