@@ -1,0 +1,30 @@
+{
+  "$schema": "https://playground.wordpress.net/blueprint-schema.json",
+  "preferredVersions": {
+    "php": "8.3",
+    "wp": "latest"
+  },
+  "features": {
+    "networking": true
+  },
+  "steps": [
+    {
+      "step": "installTheme",
+      "themeData": {
+        "resource": "wordpress.org/themes",
+        "slug": "twentytwentyfour"
+      },
+      "options": {
+        "activate": true,
+        "importStarterContent": true
+      }
+    },
+    {
+      "step": "setSiteOptions",
+      "options": {
+        "blogname": "🐠 FISCHE - Naturwunder unter Wasser",
+        "blogdescription": "Entdecke die faszinierende Welt der Aquaristik"
+      }
+    }
+  ]
+}
