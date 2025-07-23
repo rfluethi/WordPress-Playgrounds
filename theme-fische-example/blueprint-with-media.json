@@ -16,32 +16,8 @@
       }
     },
     {
-      "step": "writeFile",
-      "path": "/wordpress/wp-content/uploads/clownfisch.webp",
-      "data": {
-        "resource": "url",
-        "url": "https://raw.githubusercontent.com/rfluethi/WordPress-Playgrounds/main/theme-fische-example/images/Clownfisch.webp"
-      }
-    },
-    {
-      "step": "writeFile",
-      "path": "/wordpress/wp-content/uploads/diskusfische.webp",
-      "data": {
-        "resource": "url", 
-        "url": "https://raw.githubusercontent.com/rfluethi/WordPress-Playgrounds/main/theme-fische-example/images/Diskusfische.webp"
-      }
-    },
-    {
-      "step": "writeFile",
-      "path": "/wordpress/wp-content/uploads/siamesischer-kampffisch.webp",
-      "data": {
-        "resource": "url",
-        "url": "https://raw.githubusercontent.com/rfluethi/WordPress-Playgrounds/main/theme-fische-example/images/Siamesischer-Kampffisch.webp"
-      }
-    },
-    {
       "step": "runPHP",
-      "code": "<?php require_once 'wordpress/wp-load.php'; wp_set_current_user(1); function upload_image_to_media_library($file_path, $filename) { $upload_dir = wp_upload_dir(); $file_url = $upload_dir['url'] . '/' . $filename; if (!function_exists('wp_handle_sideload')) { require_once(ABSPATH . 'wp-admin/includes/file.php'); } if (!function_exists('wp_generate_attachment_metadata')) { require_once(ABSPATH . 'wp-admin/includes/image.php'); } $attachment = array( 'guid' => $file_url, 'post_mime_type' => 'image/webp', 'post_title' => pathinfo($filename, PATHINFO_FILENAME), 'post_content' => '', 'post_status' => 'inherit' ); $attach_id = wp_insert_attachment($attachment, $upload_dir['path'] . '/' . $filename); $attach_data = wp_generate_attachment_metadata($attach_id, $upload_dir['path'] . '/' . $filename); wp_update_attachment_metadata($attach_id, $attach_data); return $attach_id; } $clownfisch_id = upload_image_to_media_library('/wordpress/wp-content/uploads/clownfisch.webp', 'clownfisch.webp'); $diskusfische_id = upload_image_to_media_library('/wordpress/wp-content/uploads/diskusfische.webp', 'diskusfische.webp'); $kampffisch_id = upload_image_to_media_library('/wordpress/wp-content/uploads/siamesischer-kampffisch.webp', 'siamesischer-kampffisch.webp'); $upload_dir = wp_upload_dir(); $clownfisch_url = $upload_dir['url'] . '/clownfisch.webp'; $diskusfische_url = $upload_dir['url'] . '/diskusfische.webp'; $kampffisch_url = $upload_dir['url'] . '/siamesischer-kampffisch.webp'; $posts = array( array('title' => 'Clownfish', 'content' => '<div style=\"text-align: center; padding: 20px;\"><img src=\"' . $clownfisch_url . '\" alt=\"Clownfish\" style=\"width: 100%; max-width: 500px; height: auto;\"/><h1>Clownfish</h1><p>The clownfish is one of the most well-known marine fish with its characteristic orange and white stripes.</p></div>'), array('title' => 'Discus Fish', 'content' => '<div style=\"text-align: center; padding: 20px;\"><img src=\"' . $diskusfische_url . '\" alt=\"Discus Fish\" style=\"width: 100%; max-width: 500px; height: auto;\"/><h1>Discus Fish</h1><p>Discus fish are known as the kings of the freshwater aquarium.</p></div>'), array('title' => 'Siamese Fighting Fish', 'content' => '<div style=\"text-align: center; padding: 20px;\"><img src=\"' . $kampffisch_url . '\" alt=\"Siamese Fighting Fish\" style=\"width: 100%; max-width: 500px; height: auto;\"/><h1>Siamese Fighting Fish</h1><p>The Siamese fighting fish impresses with elegant fins and magnificent colors.</p></div>') ); foreach($posts as $post_data) { wp_insert_post(array('post_title' => $post_data['title'], 'post_content' => $post_data['content'], 'post_status' => 'publish', 'post_type' => 'post')); } echo 'Images uploaded to media library and posts created! Media items: ' . count(array($clownfisch_id, $diskusfische_id, $kampffisch_id)) . ', Posts: ' . count($posts); ?>"
+      "code": "<?php require_once 'wordpress/wp-load.php'; wp_set_current_user(1); if (!function_exists('wp_handle_sideload')) { require_once(ABSPATH . 'wp-admin/includes/file.php'); } if (!function_exists('wp_generate_attachment_metadata')) { require_once(ABSPATH . 'wp-admin/includes/image.php'); } function download_and_upload_image($url, $filename, $alt_text) { $temp_file = download_url($url); if (is_wp_error($temp_file)) { error_log('Failed to download: ' . $url); return false; } $file_array = array( 'name' => $filename, 'tmp_name' => $temp_file ); $id = media_handle_sideload($file_array, 0); if (is_wp_error($id)) { @unlink($temp_file); error_log('Failed to sideload: ' . $filename); return false; } update_post_meta($id, '_wp_attachment_image_alt', $alt_text); return $id; } $github_base = 'https://raw.githubusercontent.com/rfluethi/WordPress-Playgrounds/main/theme-fische-example/images/'; $clownfish_id = download_and_upload_image($github_base . 'Clownfisch.webp', 'clownfisch.webp', 'Clownfish'); $discus_id = download_and_upload_image($github_base . 'Diskusfische.webp', 'diskusfische.webp', 'Discus Fish'); $fighting_fish_id = download_and_upload_image($github_base . 'Siamesischer-Kampffisch.webp', 'siamesischer-kampffisch.webp', 'Siamese Fighting Fish'); $clownfish_url = $clownfish_id ? wp_get_attachment_url($clownfish_id) : ''; $discus_url = $discus_id ? wp_get_attachment_url($discus_id) : ''; $fighting_fish_url = $fighting_fish_id ? wp_get_attachment_url($fighting_fish_id) : ''; $posts = array( array('title' => 'Clownfish', 'content' => '<div style=\"text-align: center; padding: 20px;\"><img src=\"' . $clownfish_url . '\" alt=\"Clownfish\" style=\"width: 100%; max-width: 500px; height: auto;\"/><h1>Clownfish</h1><p>The clownfish is one of the most well-known marine fish with its characteristic orange and white stripes.</p></div>'), array('title' => 'Discus Fish', 'content' => '<div style=\"text-align: center; padding: 20px;\"><img src=\"' . $discus_url . '\" alt=\"Discus Fish\" style=\"width: 100%; max-width: 500px; height: auto;\"/><h1>Discus Fish</h1><p>Discus fish are known as the kings of the freshwater aquarium.</p></div>'), array('title' => 'Siamese Fighting Fish', 'content' => '<div style=\"text-align: center; padding: 20px;\"><img src=\"' . $fighting_fish_url . '\" alt=\"Siamese Fighting Fish\" style=\"width: 100%; max-width: 500px; height: auto;\"/><h1>Siamese Fighting Fish</h1><p>The Siamese fighting fish impresses with elegant fins and magnificent colors.</p></div>') ); foreach($posts as $post_data) { wp_insert_post(array('post_title' => $post_data['title'], 'post_content' => $post_data['content'], 'post_status' => 'publish', 'post_type' => 'post')); } echo 'Images downloaded to media library and posts created! Clownfish ID: ' . $clownfish_id . ', Discus ID: ' . $discus_id . ', Fighting Fish ID: ' . $fighting_fish_id; ?>"
     }
   ]
 }
