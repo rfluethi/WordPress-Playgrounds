@@ -426,7 +426,7 @@
 
 <!-- wp:group {"className":"service-card","style":{"spacing":{"padding":{"top":"var:preset|spacing|40","bottom":"var:preset|spacing|40","left":"var:preset|spacing|40","right":"var:preset|spacing|40"}}},"borderColor":"accent-3","layout":{"type":"constrained"}} -->
 <div class="wp-block-group service-card has-border-color has-accent-3-border-color" style="padding-top:var(--wp--preset--spacing--40);padding-right:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--40);padding-left:var(--wp--preset--spacing--40)"><!-- wp:image {"id":44,"sizeSlug":"full","linkDestination":"none","align":"center"} -->
-<figure class="wp-block-image aligncenter size-full"><img src="http://block-beispiele.local/wp-content/uploads/2025/08/OIP-82832145.jpg" alt="" class="wp-image-44"/></figure>
+<figure class="wp-block-image aligncenter size-full"><img src="https://picsum.photos/400/300?random=2" alt="" class="wp-image-44"/></figure>
 <!-- /wp:image -->
 
 <!-- wp:heading -->
