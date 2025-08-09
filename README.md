@@ -52,7 +52,7 @@ Whether you're building client sites, creating educational content, or simply wa
 
 ![Column Example](column-example/column-example.png)
 
-**[🚀 Try Live Demo](https://playground.wordpress.net/?blueprint-url=https://raw.githubusercontent.com/rfluethi/WordPress-Playgrounds/main/column-example/blueprint.json)** | **[📖 Read Tutorial](column-example/README.md)**
+**[Try Live Demo](https://playground.wordpress.net/?blueprint-url=https://raw.githubusercontent.com/rfluethi/WordPress-Playgrounds/main/column-example/blueprint.json)** | **[Read Tutorial](column-example/README.md)**
 
 Master responsive layouts with WordPress Column blocks. This example teaches professional layout techniques using CSS Grid and Flexbox within the Block Editor.
 
@@ -70,7 +70,7 @@ Master responsive layouts with WordPress Column blocks. This example teaches pro
 
 ![CSS Animations Example](css-animations-example/css-animations-example.png)
 
-**[🚀 Try Live Demo](https://playground.wordpress.net/?blueprint-url=https://raw.githubusercontent.com/rfluethi/WordPress-Playgrounds/main/css-animations-example/blueprint.json)** | **[📖 Read Tutorial](css-animations-example/css-animations-example-tutorial.md)**
+**[Try Live Demo](https://playground.wordpress.net/?blueprint-url=https://raw.githubusercontent.com/rfluethi/WordPress-Playgrounds/main/css-animations-example/blueprint.json)** | **[Read Tutorial](css-animations-example/css-animations-example-tutorial.md)**
 
 Transform your WordPress content with engaging CSS animations. Learn to create smooth hover effects, transitions, and keyframe animations using only CSS—no plugins required.
 
@@ -96,8 +96,8 @@ Transform your WordPress content with engaging CSS animations. Learn to create s
 
 Experience the examples instantly in your browser:
 
-1. **CSS Animations Demo**: Click [🚀 Try Live Demo](https://playground.wordpress.net/?blueprint-url=https://raw.githubusercontent.com/rfluethi/WordPress-Playgrounds/main/css-animations-example/blueprint.json)
-2. **Column Layouts Demo**: Click [🚀 Try Live Demo](https://playground.wordpress.net/?blueprint-url=https://raw.githubusercontent.com/rfluethi/WordPress-Playgrounds/main/column-example/blueprint.json)
+1. **CSS Animations Demo**: Click [Try Live Demo](https://playground.wordpress.net/?blueprint-url=https://raw.githubusercontent.com/rfluethi/WordPress-Playgrounds/main/css-animations-example/blueprint.json)
+2. **Column Layouts Demo**: Click [Try Live Demo](https://playground.wordpress.net/?blueprint-url=https://raw.githubusercontent.com/rfluethi/WordPress-Playgrounds/main/column-example/blueprint.json)
 3. **Explore the Block Editor**: Edit content, apply CSS classes, and see the effects live
 4. **Copy the CSS**: Use your browser's developer tools to copy styles you like
 
@@ -139,11 +139,11 @@ WordPress-Playgrounds/
 │   ├── blueprint.json              # WordPress Playground configuration
 │   ├── css-animations-theme.zip    # Complete Block Theme with animations
 │   ├── css-animations-theme/       # Theme source files
-│   │   ├── style.css              # 🎯 Main CSS animations file
+│   │   ├── style.css              # Main CSS animations file
 │   │   ├── theme.json             # Block Editor configuration
 │   │   └── patterns/              # Reusable block patterns
 │   ├── css-animations-example.xml  # Sample content with applied animations
-│   ├── css-animations-example-tutorial.md # 📖 Complete tutorial
+│   ├── css-animations-example-tutorial.md # Complete tutorial
 │   ├── css-animations-example.png  # Preview image
 │   └── README.md                  # Quick start guide
 │
@@ -279,6 +279,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-**Happy coding!** 🎨✨
+**Happy coding!**
 
-*Made with ❤️ for the WordPress community*
+*Made with love for the WordPress community*
