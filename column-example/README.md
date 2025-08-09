@@ -1,69 +1,67 @@
 
-# Column Example
+# WordPress Column Layout Example
 
-[![Try it now](https://img.shields.io/badge/Try%20it%20now-WordPress%20Playground-blue.svg)](https://playground.wordpress.net/?mode=seamless&blueprint-url=https://raw.githubusercontent.com/rfluethi/WordPress-Playgrounds/main/column-example/blueprint.json)
+This directory demonstrates how to create **professional responsive column layouts** in WordPress using the **Block Editor** with equal-height cards and perfect button alignment.
 
-This example demonstrates advanced three-column WordPress block layouts with automatic height adjustment. Learn how to create responsive column layouts that maintain consistent button alignment regardless of content length - solving a common WordPress design challenge.
+![Column Example](column-example.png)
 
-![Screenshot](column-example.png)
-
-## What You'll Learn
-
-- Advanced WordPress block editor techniques
-- CSS flexbox implementation in WordPress
-- Responsive column design patterns
-- Button alignment solutions
-- Professional styling with rounded corners
-
-## Example Details
-
-- **Difficulty**: Intermediate
-- **WordPress Features**: Block Editor, Custom CSS, Responsive Design
-- **Use Cases**: Product showcases, service listings, feature comparisons
-
-## The Problem This Solves
-
-When creating multi-column layouts in WordPress, content of varying lengths often causes misaligned buttons and inconsistent spacing. This example shows how to:
-
-- Maintain equal column heights
-- Align buttons consistently at the bottom
-- Create responsive designs that work on all devices
-- Apply professional styling
-
-
-## Files
-
-- **`blueprint.json`**: Playground configuration that imports the column layout
-- **`column-example.xml`**: WXR file containing the styled column layout post
-- **`column-example.png`**: Screenshot showing the column layout result
-
-## Quick Start
-
-**Option 1: Direct Launch**
-Click the badge above or use this URL:
+## Live Demo
 
 ```url
-https://playground.wordpress.net/?mode=seamless&blueprint-url=https://raw.githubusercontent.com/rfluethi/WordPress-Playgrounds/main/column-example/blueprint.json
+https://playground.wordpress.net/?blueprint-url=https://raw.githubusercontent.com/rfluethi/WordPress-Playgrounds/main/column-example/blueprint.json
 ```
 
-**Option 2: Study the Code**
-The imported post contains the complete HTML structure and CSS for the column layout. Perfect for understanding:
+## Documentation
 
-- WordPress block markup
-- Flexbox CSS implementation  
-- Responsive design techniques
-- Button styling and alignment
+For a complete step-by-step tutorial on creating these column layouts, see the [Column Layout Tutorial](column-example-tutorial.md).
 
-## Technical Implementation
+## What This Example Shows
 
-### Key CSS Concepts Used
+This WordPress Playground demonstrates advanced **column layout techniques** that solve common design challenges in the WordPress Block Editor:
 
-- **Flexbox containers** for equal height columns
-- **`align-items: stretch`** for full height content
-- **`margin-top: auto`** for bottom-aligned buttons
-- **Media queries** for responsive behavior
+### Layout Features
 
-### WordPress Integration
+- **Equal Height Cards** - All columns maintain the same height regardless of content length
+- **Flexible Content Areas** - Text areas expand to fill available space
+- **Bottom-Aligned Buttons** - Buttons always appear at the bottom of each card
+- **Professional Styling** - Rounded corners and consistent spacing
+- **Responsive Design** - Adapts to different screen sizes automatically
+
+### The Problem This Solves
+
+When creating multi-column layouts in WordPress, content of varying lengths often causes:
+- Misaligned buttons across columns
+- Inconsistent card heights
+- Unprofessional appearance
+- Poor user experience
+
+This example provides a **CSS-only solution** using WordPress Block Editor features.
+
+### Implementation Techniques
+
+- **CSS Flexbox** - For equal height columns
+- **Stack Blocks** - For flexible content arrangement
+- **Dimension Controls** - For proper spacing and sizing
+- **Transform Options** - Converting between block types
+- **Border Radius** - For modern rounded corner styling
+
+## How It Works
+
+1. **Group Structure**: Content is organized into grouped stacks within columns
+2. **Height Control**: Minimum height of 100% ensures equal column heights
+3. **Flexible Growth**: Content areas use "Grow" dimension to fill available space
+4. **Button Positioning**: Buttons remain at bottom through flexbox alignment
+5. **Responsive Behavior**: WordPress Column blocks handle mobile responsiveness
+
+## Key WordPress Features Used
+
+- **Column Blocks** - WordPress native responsive columns
+- **Group Blocks** - For organizing and styling content sections
+- **Stack Blocks** - For vertical content arrangement with flex properties
+- **Dimension Controls** - Built-in WordPress spacing and sizing options
+- **Transform Tools** - Converting between different block types
+
+Perfect for: **Product showcases**, **service listings**, **team member cards**, **feature comparisons**, and any layout requiring consistent card appearance.
 
 - Uses native WordPress blocks
 - Compatible with the block editor

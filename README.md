@@ -52,7 +52,7 @@ Whether you're building client sites, creating educational content, or simply wa
 
 ![Column Example](column-example/column-example.png)
 
-**[Try Live Demo](https://playground.wordpress.net/?blueprint-url=https://raw.githubusercontent.com/rfluethi/WordPress-Playgrounds/main/column-example/blueprint.json)** | **[Read Tutorial](column-example/README.md)**
+**[Try Live Demo](https://playground.wordpress.net/?blueprint-url=https://raw.githubusercontent.com/rfluethi/WordPress-Playgrounds/main/column-example/blueprint.json)** | **[Read Tutorial](column-example/column-example-tutorial.md)**
 
 Master responsive layouts with WordPress Column blocks. This example teaches professional layout techniques using CSS Grid and Flexbox within the Block Editor.
 
@@ -123,7 +123,7 @@ cd WordPress-Playgrounds
 - `css-animations-theme/style.css` - All animation CSS code
 - `css-animations-example.xml` - WordPress content with applied classes  
 - `css-animations-example-tutorial.md` - Step-by-step implementation guide
-- `column-example/README.md` - Advanced layout techniques
+- `column-example/column-example-tutorial.md` - Advanced layout techniques
 
 ## Repository Structure
 
@@ -133,6 +133,7 @@ WordPress-Playgrounds/
 │   ├── blueprint.json              # WordPress Playground configuration
 │   ├── column-example.xml         # Sample layout content
 │   ├── column-example.png         # Preview image
+│   ├── column-example-tutorial.md # Step-by-step tutorial
 │   └── README.md                  # Implementation guide
 │
 ├── css-animations-example/
