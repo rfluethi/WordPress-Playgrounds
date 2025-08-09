@@ -399,7 +399,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:image {"id":44,"aspectRatio":"16/9","scale":"cover","sizeSlug":"full","linkDestination":"none","className":"image-zoom"} -->
-<figure class="wp-block-image size-full image-zoom"><img src="http://block-beispiele.local/wp-content/uploads/2025/08/OIP-82832145.jpg" alt="" class="wp-image-44" style="aspect-ratio:16/9;object-fit:cover"/></figure>
+<figure class="wp-block-image size-full image-zoom"><img src="https://picsum.photos/700?random=1" alt="" class="wp-image-44" style="aspect-ratio:16/9;object-fit:cover"/></figure>
 <!-- /wp:image -->
 
 <!-- wp:paragraph {"metadata":{"name":"Tutorial"}} -->
