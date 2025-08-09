@@ -13,9 +13,8 @@ Welcome to the WordPress Playgrounds repository! This collection of interactive 
   - [Table of Contents](#table-of-contents)
   - [What is WordPress Playground?](#what-is-wordpress-playground)
   - [Available Examples](#available-examples)
-    - [Import Example](#import-example)
     - [Column Example](#column-example)
-    - [Theme Fische Example](#theme-fische-example)
+    - [CSS Animations Example](#css-animations-example)
   - [Quick Start](#quick-start)
     - [Option 1: Use Pre-built Examples](#option-1-use-pre-built-examples)
     - [Option 2: Clone and Customize](#option-2-clone-and-customize)
@@ -46,31 +45,6 @@ WordPress Playground allows you to run WordPress directly in your browser withou
 
 ## Available Examples
 
-### Import Example
-
-<a href="import-example/">
-  <img src="import-example/import-example.png" alt="Import Example" width="600">
-</a>
-
-**Demonstrates**: WordPress content import functionality using WXR files  
-**Difficulty**: Beginner  
-**Use Cases**: Content migration, site setup, bulk imports  
-
-This example shows how to automatically import posts, pages, and media into a WordPress site using the WordPress Playground. Perfect for understanding how content migration works and testing import processes without affecting live sites.
-
-**Features**:
-
-- Automatic WXR file import
-- Sample posts and pages
-- Media file handling
-- Import process demonstration
-
-**Try it**: [Launch Import Example](https://playground.wordpress.net/?mode=seamless&blueprint-url=https://raw.githubusercontent.com/rfluethi/WordPress-Playgrounds/main/import-example/blueprint.json)
-
-**Documentation**: [View import-example directory](import-example/)
-
----
-
 ### Column Example
 
 <a href="column-example/">
@@ -97,31 +71,33 @@ This example showcases how to create responsive column layouts that maintain con
 
 ---
 
-### Theme Fische Example
+### CSS Animations Example
 
-**Demonstrates**: WordPress theme installation and configuration with complete demo content  
-**Difficulty**: Beginner  
-**Use Cases**: Theme testing, content demonstration, educational projects  
+<a href="css-animations-example/">
+  <img src="css-animations-example/css-animations-example.png" alt="CSS Animations Example" width="600">
+</a>
 
-This example shows how to automatically install and activate a WordPress theme with a complete fish & aquarium website. Available in two versions: a complete demo with custom child theme and WXR import, and a simple version with standard theme.
+**Demonstrates**: CSS animations and effects in WordPress Block Editor without plugins  
+**Difficulty**: Intermediate  
+**Use Cases**: Interactive design, visual effects, engaging user experiences  
+
+This example shows how to implement various CSS animations and hover effects in WordPress using only the Block Editor. Perfect for learning how to add visual appeal and interactivity to WordPress sites without any plugins.
 
 **Features**:
 
-- Complete fish & aquarium demo website
-- Automatic theme installation and activation
-- Custom child theme based on Twenty Twenty-Five
-- WXR content import with posts, pages, and categories
-- Multiple fish categories (Buntbarsche, Labyrinthfische, Karpfenartige, Meeresfische)
-- Hero section with parallax background
-- Responsive grid layout for posts
-- Site configuration and customizer settings
+- Button press animations with realistic feedback
+- Color change effects on hover
+- Background highlight animations
+- Image zoom and shadow effects
+- Interactive service cards
+- Modern CSS transitions and keyframe animations
+- Block Theme integration with Additional CSS
 
-**Try it**:
+**Try it**: [Launch CSS Animations Example](https://playground.wordpress.net/?mode=seamless&blueprint-url=https://raw.githubusercontent.com/rfluethi/WordPress-Playgrounds/main/css-animations-example/blueprint.json)
 
-- [Complete Demo with Custom Theme](https://playground.wordpress.net/?blueprint-url=https://raw.githubusercontent.com/rfluethi/WordPress-Playgrounds/main/theme-fische-example/blueprint-complete.json) (recommended)
-- [Simple Demo with Standard Theme](https://playground.wordpress.net/?blueprint-url=https://raw.githubusercontent.com/rfluethi/WordPress-Playgrounds/main/theme-fische-example/blueprint.json)
+**Documentation**: [View css-animations-example directory](css-animations-example/)
 
-**Documentation**: [View theme-fische-example directory](theme-fische-example/)
+---
 
 ## Quick Start
 
@@ -149,24 +125,22 @@ https://playground.wordpress.net/?mode=seamless&blueprint-url=YOUR_BLUEPRINT_URL
 ## Repository Structure
 
 ```text
+```text
 WordPress-Playgrounds/
-├── README.md
-├── import-example/
-│   ├── blueprint.json          # Playground configuration
-│   ├── import.xml             # Sample content to import
-│   ├── import-example.png     # Example screenshot
-│   └── README.md              # Detailed documentation
 ├── column-example/
-│   ├── blueprint.json          # Playground configuration
-│   ├── column-example.xml      # Column layout content
-│   ├── column-example.png      # Example screenshot
+│   ├── blueprint.json          # Column layout blueprint
+│   ├── column-example.xml      # Demo content
+│   ├── column-example.png      # Preview image
 │   └── README.md              # Detailed documentation
-├── theme-fische-example/
-│   ├── blueprint.json          # Theme setup with WXR import
-│   ├── demo-content-complete.xml # Full demo content
-│   ├── demo-content.xml        # Basic demo content
+├── css-animations-example/
+│   ├── blueprint.json          # CSS animations blueprint
+│   ├── css-animations-example.xml # Demo content with animations
+│   ├── css-animations-example.png # Preview image
+│   ├── css-animations-example-tutorial.md # Complete tutorial
+│   ├── css-animations-theme.zip # Custom Block Theme
 │   └── README.md              # Detailed documentation
 └── LICENSE
+```
 ```
 
 ## Blueprint Configuration
