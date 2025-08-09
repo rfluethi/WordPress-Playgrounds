@@ -21,23 +21,33 @@ This WordPress Playground demonstrates various **CSS animation techniques** that
 ### Interactive Effects
 
 - **Button Press Animation** - Buttons that lift on hover and press down when clicked
-- **Color Change on Hover** - Text that changes color when you hover over it
+- **Color Change on Hover** - Text that changes color when you hover over it  
 - **Background Effects** - Elements that get highlighted backgrounds on hover
-- **Shadow and Zoom** - Content that scales up and gets shadows on interaction
+- **Image Zoom Effects** - Images that scale and get shadows on hover
+- **Service Card Animations** - Interactive cards with multiple hover effects
 
-### Keyframe Animations
+### Available CSS Classes
 
-- **Fade In Effects** - Elements that gradually appear
-- **Slide In Animations** - Content that slides into view
-- **Pulse Effects** - Elements that gently pulse to draw attention
-- **Rotation Effects** - Elements that rotate on hover
-- **Bounce Animations** - Playful bouncing effects
+The blueprint includes these ready-to-use CSS classes:
+
+- `button-press` - Button interaction effects
+- `hover-color` - Color change on hover
+- `hover-bg` - Background highlight on hover  
+- `image-zoom` - Image scaling and shadow effects
+- `service-card` - Multi-effect card animations
+- `shadow-zoom` - Scale and shadow combination
+- `fade-in` - Fade in animation
+- `slide-in` - Slide in from left
+- `pulse` - Pulsing animation
+- `rotate` - Rotation on hover
+- `bounce` - Bouncing animation
 
 ## How It Works
 
-1. **CSS Classes**: The animations are applied using CSS classes like `button-press`, `hover-color`, `shadow-zoom`
+1. **CSS Classes**: The animations are applied using CSS classes like `button-press`, `hover-color`, `image-zoom`
 2. **Block Editor Integration**: Each class can be applied to any WordPress block via the "Additional CSS class(es)" field
 3. **Pure CSS**: No JavaScript or plugins required - just CSS transitions and keyframe animations
+4. **Block Theme Integration**: CSS is automatically injected via the Additional CSS feature
 
 ## Files
 
@@ -59,8 +69,10 @@ This example is perfect for:
 
 The blueprint:
 
-1. Imports the WXR content with pre-configured blocks and CSS classes
-2. Injects the CSS animation styles directly into the WordPress site
-3. Provides immediate visual feedback for all animation effects
+1. **Installs and activates** a custom Block Theme for optimal CSS support
+2. **Imports the WXR content** with pre-configured blocks and CSS classes
+3. **Injects CSS animation styles** directly into WordPress via `wp_update_custom_css_post()`
+4. **Provides immediate visual feedback** for all animation effects
+5. **Automatically redirects** to the CSS animations demo page
 
-All animations use modern CSS features like `transition`, `transform`, and `@keyframes` for smooth, performant effects.
+All animations use modern CSS features like `transition`, `transform`, and `@keyframes` for smooth, performant effects that work across all modern browsers.
