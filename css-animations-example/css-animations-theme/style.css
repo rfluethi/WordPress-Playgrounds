@@ -1,155 +1,52 @@
 /*
 Theme Name: CSS Animations Demo
-Description: A child theme of Twenty Twenty-Five with CSS animations for WordPress Playground demonstrations
+Description: A customized Twenty Twenty-Five theme with built-in CSS animation examples for WordPress Block Editor demonstrations. Includes hover effects, transitions, and keyframe animations.
 Version: 1.0
-Template: twentytwentyfive
+Text Domain: css-animations-demo
 */
 
-/* Import parent theme styles */
-@import url("../twentytwentyfive/style.css");
-
-/* CSS Animations for WordPress Block Editor Demonstrations */
-
-/* Button Press Effect */
-.button-press,
-.button-press .wp-block-button__link {
-  transition: all 0.1s ease !important;
-  transform: translateY(0px) !important;
+/*
+ * Link styles
+ * https://github.com/WordPress/gutenberg/issues/42319
+ */
+a {
+	text-decoration-thickness: 1px !important;
+	text-underline-offset: .1em;
 }
 
-.button-press:hover,
-.button-press .wp-block-button__link:hover {
-  transform: translateY(-2px) !important;
+/* Focus styles */
+:where(.wp-site-blocks *:focus) {
+	outline-width: 2px;
+	outline-style: solid;
 }
 
-.button-press:active,
-.button-press .wp-block-button__link:active {
-  transform: translateY(2px) !important;
-  transition: all 0.05s ease !important;
+/* Increase the bottom margin on submenus, so that the outline is visible. */
+.wp-block-navigation .wp-block-navigation-submenu .wp-block-navigation-item:not(:last-child) {
+	margin-bottom: 3px;
 }
 
-/* Color Change on Hover */
-.hover-color {
-  transition: all 0.3s ease !important;
+/* Increase the outline offset on the parent menu items, so that the outline does not touch the text. */
+.wp-block-navigation .wp-block-navigation-item .wp-block-navigation-item__content {
+	outline-offset: 4px;
 }
 
-.hover-color:hover {
-  color: crimson !important;
+/* Remove outline offset from the submenus, otherwise the outline is visible outside the submenu container. */
+.wp-block-navigation .wp-block-navigation-item ul.wp-block-navigation__submenu-container .wp-block-navigation-item__content {
+	outline-offset: 0;
 }
 
-/* Background Effect on Hover */
-.hover-bg {
-  transition: all 0.3s ease !important;
-  padding: 10px !important;
-  border-radius: 5px !important;
+/*
+ * Progressive enhancement to reduce widows and orphans
+ * https://github.com/WordPress/gutenberg/issues/55190
+ */
+h1, h2, h3, h4, h5, h6, blockquote, caption, figcaption, p {
+	text-wrap: pretty;
 }
 
-.hover-bg:hover {
-  background-color: #f0f0f0 !important;
-}
-
-/* Shadow and Zoom Combined */
-.shadow-zoom {
-  transition: all 0.3s ease !important;
-}
-
-.shadow-zoom:hover {
-  transform: scale(1.05) !important;
-  box-shadow: 0 10px 20px rgba(0,0,0,0.1) !important;
-}
-
-/* Fade In Animation */
-.fade-in {
-  opacity: 0 !important;
-  animation: fadeIn 2s ease-in forwards !important;
-}
-
-@keyframes fadeIn {
-  to {
-    opacity: 1 !important;
-  }
-}
-
-/* Slide In Animation */
-.slide-in {
-  transform: translateX(-100%) !important;
-  animation: slideIn 1s ease-out forwards !important;
-}
-
-@keyframes slideIn {
-  to {
-    transform: translateX(0) !important;
-  }
-}
-
-/* Pulse Effect */
-.pulse {
-  animation: pulse 2s infinite !important;
-}
-
-@keyframes pulse {
-  0%, 100% {
-    transform: scale(1) !important;
-  }
-  50% {
-    transform: scale(1.05) !important;
-  }
-}
-
-/* Rotation Effect */
-.rotate {
-  transition: transform 0.5s ease !important;
-}
-
-.rotate:hover {
-  transform: rotate(360deg) !important;
-}
-
-/* Bounce Animation */
-.bounce {
-  animation: bounce 1s infinite !important;
-}
-
-@keyframes bounce {
-  0%, 20%, 50%, 80%, 100% {
-    transform: translateY(0) !important;
-  }
-  40% {
-    transform: translateY(-10px) !important;
-  }
-  60% {
-    transform: translateY(-5px) !important;
-  }
-}
-
-/* Additional Smooth Animations */
-.smooth-grow {
-  transition: all 0.3s ease !important;
-}
-
-.smooth-grow:hover {
-  transform: scale(1.1) !important;
-}
-
-.glow {
-  transition: all 0.3s ease !important;
-}
-
-.glow:hover {
-  box-shadow: 0 0 20px rgba(59, 130, 246, 0.5) !important;
-}
-
-/* Wobble Effect */
-.wobble:hover {
-  animation: wobble 0.8s ease-in-out !important;
-}
-
-@keyframes wobble {
-  0% { transform: translateX(0%) !important; }
-  15% { transform: translateX(-25px) rotate(-5deg) !important; }
-  30% { transform: translateX(20px) rotate(3deg) !important; }
-  45% { transform: translateX(-15px) rotate(-3deg) !important; }
-  60% { transform: translateX(10px) rotate(2deg) !important; }
-  75% { transform: translateX(-5px) rotate(-1deg) !important; }
-  100% { transform: translateX(0%) !important; }
+/*
+ * Change the position of the more block on the front, by making it a block level element.
+ * https://github.com/WordPress/gutenberg/issues/65934
+*/
+.more-link {
+	display: block;
 }

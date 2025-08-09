@@ -29,6 +29,10 @@
         "resource": "url",
         "url": "https://raw.githubusercontent.com/rfluethi/WordPress-Playgrounds/main/css-animations-example/css-animations-example.xml"
       }
+    },
+    {
+      "step": "runPHP",
+      "code": "<?php require_once '/wordpress/wp-load.php'; wp_set_current_user(1); $custom_css = '.button-press { transition: all 0.1s ease !important; transform: translateY(0px) !important; } .button-press:hover { transform: translateY(-2px) !important; } .button-press:active { transform: translateY(2px) !important; transition: all 0.05s ease !important; } .hover-color { transition: all 0.3s ease !important; } .hover-color:hover { color: crimson !important; } .hover-bg { transition: all 0.3s ease !important; padding: 10px !important; border-radius: 5px !important; } .hover-bg:hover { background-color: #f0f0f0 !important; } .shadow-zoom { transition: all 0.3s ease !important; } .shadow-zoom:hover { transform: scale(1.05) !important; box-shadow: 0 10px 20px rgba(0,0,0,0.1) !important; } .fade-in { opacity: 0 !important; animation: fadeIn 2s ease-in forwards !important; } @keyframes fadeIn { to { opacity: 1 !important; } } .slide-in { transform: translateX(-100%) !important; animation: slideIn 1s ease-out forwards !important; } @keyframes slideIn { to { transform: translateX(0) !important; } } .pulse { animation: pulse 2s infinite !important; } @keyframes pulse { 0%, 100% { transform: scale(1) !important; } 50% { transform: scale(1.05) !important; } } .rotate { transition: transform 0.5s ease !important; } .rotate:hover { transform: rotate(360deg) !important; } .bounce { animation: bounce 1s infinite !important; } @keyframes bounce { 0%, 20%, 50%, 80%, 100% { transform: translateY(0) !important; } 40% { transform: translateY(-10px) !important; } 60% { transform: translateY(-5px) !important; } }'; wp_update_custom_css_post(wp_get_custom_css_post(), array('post_content' => $custom_css)); echo 'Additional CSS added successfully!'; ?>"
     }
   ],
   "login": true,
